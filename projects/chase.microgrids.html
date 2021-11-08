@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="../perweb.css" type="text/css" />
+<title>Online Energy Generation Scheduling for Microgrids </title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Minghua Chen</div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="../bio.html">Biography</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="../projects.html">Projects</a></div>
+<div class="menu-item"><a href="../publications.html">Publications</a></div>
+<div class="menu-item"><a href="../team.html">Team</a></div>
+<div class="menu-item"><a href="../advice.html">To&nbsp;Students</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Online Energy Generation Scheduling for Microgrids </h1>
+<div id="subtitle">Joint work with Lian Lu and Jinlong Tu from The Chinese University of Hong Kong, Chi-Kin Chau from 
+the Masdar Istitute, Zhao Xu from The Hong Kong Polytechnic University, and 
+Xiaojun Lin from Purdue University. </div>
+</div>
+<p>Microgrids represent an emerging paradigm of future electric power systems 
+that integrate both distributed and centralized generation. Two recent trends 
+in microgrids are the integration of local renewable energy sources (such as 
+wind farms) and the use of co-generation (i.e., to supply both electricity 
+and heat). However, these trends also bring unprecedented challenges to the 
+design of intelligent control strategies for the microgrids. Traditional 
+generation scheduling paradigms assuming perfect prediction of future 
+electricity supply and demand are no longer applicable to microgrids with 
+unpredictable renewable energy supply and co-generation (that depends on both 
+electricity and heat demand). In this paper, we study online algorithms for 
+the micro-grid generation scheduling problem with intermittent renewable 
+energy sources and co-generation, in order to maximize the cost-savings with 
+local generation. Based on insights from the structure of the offline optimal 
+solution, we propose a class of competitive online algorithms, called CHASE 
+(Competitive Heuristic Algorithm for Scheduling Energy-generation), that 
+track the offline optimal in an online fashion. Under certain settings, we 
+show that CHASE achieves the best competitive ratio of all deterministic 
+online algorithms, which is a small constant 3. We also developed the randomized counterpart of CHASE, named rCHASE, with a competitive ratio around 2.13, improving beyond the best possible one for deterministic algorithms.
+We further extend our algorithms to intelligently leverage on 
+limited prediction of the future, such as near-term demand or wind forecast. 
+By extensive empirical evaluation using real-world traces, we show that our 
+proposed algorithms can achieve near-offline-optimal performance. In a 
+representative scenario, CHASE leads to around 20% cost savings with no 
+future look-ahead at all, and the cost-savings further increase with limited 
+future look-ahead. </p>
+<p>In our recent work on peak-aware online economic dispatching in microgrids, we identify the microgrid economic dispatching problem with the widely-used peak-charging model taken into account. 
+The peak-charging model introduces a new set of challenges for designing optimal and effective online solutions for the problem. We tackle the challenges and propose the first and optimal online economic dispatching solutions for smooth and cost-effective microgrid operation.</p>
+<h2>Publications</h2>
+<ul>
+<li><p>L. Lu, J. Tu, C. Chau, M. Chen, and X. Lin, &ldquo;Online Energy Generation Scheduling for Microgrids with Intermittent Energy Sources and Co-Generation&rdquo;, in Proceedings of ACM SIGMETRICS, Pittsburgh, PA, US, June 17 - 21, 2013. [<a href="../papers/CHASE.SIGMETRICS.13.pdf">PDF</a>] Also available as a technical report. [<a href="http://arxiv.org/abs/1211.4473">PDF</a>] (The first two authors are in alphabetical order.)</p>
+</li>
+<li><p>L. Lu, J. Tu, C. Chau, M. Chen, Z. Xu, and X. Lin, &ldquo;Towards Real-Time Energy Scheduling in Microgrids with Performance Guarantee&rdquo;, in Proceedings of IEEE Power and Energy Society General Meeting, Vancouver, BC, Canada, July 21 - 25, 2013. [ final version to be available ]</p>
+</li>
+<li><p>M. Hajiesmaili, C. Chau, M. Chen, and L. Huang, &ldquo;Online Microgrid Energy Generation Scheduling Revisited: The Benefits of Randomization and Interval Prediction&rdquo;, in Proceedings of the seventh International Conference on Future Energy Systems (ACM e-Energy 2016), Waterloo, Canada, June 21 - 24, 2016. [<a href="../papers/rCHASE.eEnergy.16.pdf">PDF</a>] <br /> <font color=#E80000> Best Paper Award Candidate.</font>    </p>
+</li>
+<li><p>Y. Zhang, M. Hajiesmaili, and M. Chen, &ldquo;Peak-Aware Online Economic Dispatching for Microgrids&rdquo;, in Proceedings of the sixth International Conference on Future Energy Systems (ACM e-Energy 2015), Bangalore, India, July 14 - 17, 2015. [<a href="../papers/PAED.e-Energy.15.pdf">PDF</a>]</p>
+</li>
+<li><p>Y. Zhang, M. H. Hajiesmaili, S. Cai, M. Chen, and Q. Zhu, &ldquo;Peak-Aware Online Economic Dispatching for Microgrids&rdquo;, accepted for publication in IEEE Transactions on Smart Grid. [ final version to be available ]</p>
+</li>
+</ul>
+<h2>Presentation</h2>
+<ul>
+<li><p>M. Chen, &ldquo;Competitive Energy Generation Scheduling for Microgrids&rdquo;, SIGMETRICS presentation. [<a href="../talks/CHASE.SIGMETRICS.web.ppsx">PowerPoint</a>]</p>
+</li>
+</ul>
+<h2>Press Release and News Coverage:</h2>
+<ul>
+<li><p>Press Release: <a href="http://www.cpr.cuhk.edu.hk/en/press_detail.php?id=2617">CUHK</a></p>
+</li>
+<li><p>News Coverage: see a list <a href="https://sse.erg.cuhk.edu.hk/sse/node/7">here</a></p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 10/2021, by a modified version of <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-112827-1";
+urchinTracker();
+</script>
+</body>
+</html>

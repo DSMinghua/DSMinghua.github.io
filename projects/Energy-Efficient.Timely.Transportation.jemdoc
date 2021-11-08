@@ -1,0 +1,46 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Energy-Efficient Timely Transportation 
+Joint work with Lei Deng and Mohammad Hassan Hajiesmaili from The Chinese University of Hong Kong, and Haibo Zeng from Virginia Tech. 
+
+
+We consider a timely transportation problem where a heavyduty
+truck travels between two locations across the national
+highway system, subject to a hard deadline constraint.
+Our objective is to minimize the total fuel consumption
+of the truck, by optimizing both route planning and
+speed planning. The problem is important for cost-effective
+and environment-friendly truck operation, and it is uniquely
+challenging due to its combinatorial nature as well as the
+need of considering hard deadline constraint. We first show
+that the problem is NP-Complete; thus exact solution is
+computational prohibited unless P=NP. We then design a
+fully polynomial time approximation scheme (FPTAS) that
+attains an approximation ratio of 1 + \\epsilon with a network-size
+induced complexity of O(mn^2), where m and n are the
+numbers of nodes and edges, respectively. While achieving
+highly-preferred theoretical performance guarantee, the
+proposed FPTAS still suffers from long running time when
+applying to national-wide highway systems with tens of thousands
+of nodes and edges. Leveraging elegant insights
+from studying the dual of the original problem, we design a
+fast heuristic solution with O(m+ n log n) complexity. The
+proposed heuristic allows us to tackle the energy-efficient
+timely transportation problem on large-scale national highway
+systems, while achieving close-to-optimal empirical performance
+as shown in our numerical evaluations. We carry
+out extensive numerical experiments using real-world truck
+data over the actual U.S. highway network. The results show
+that our proposed solutions achieve 16% (resp. 14%) fuel
+consumption reduction, as compared to a fastest path (resp.
+shortest path) algorithm adapted from common practice.
+
+
+
+== Publications
+
+    - L. Deng, M. H. Hajiesmaili, M. Chen, and H. Zeng, "Energy-Efficient Timely Transportation of Long-Haul Heavy-Duty Trucks", in Proceedings of ACM e-Energy, Waterloo, Canada, June 21 - 24, 2016. \[ final version to be available \]
+
+# == Presentation
+#
+#   - M. Chen, "Energy-Efficient Dynamic Provisioning in Data Centers: The Benefit of Seeing the Future". \[[dp.tom.and.jerry.ppsx PowerPoint]\]

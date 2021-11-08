@@ -1,0 +1,53 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Indoor White Space Networking in Metropolises 
+Joint work with Xuhang Ying, Jincheng Zhang, Lichao Yan, and Guanglin Zhang from The Chinese University of Hong Kong, and 
+Ranveer Chandra from Microsoft Research. 
+
+It is a promising vision to utilize white spaces, i.e., vacant
+VHF and UHF TV channels, to satisfy skyrocketing wireless
+data demand in both outdoor and indoor scenarios. While
+most prior works have focused on exploring outdoor white
+spaces, the indoor story is largely open for investigation.
+Motivated by this observation and that 70\% of the spectrum
+demand comes from indoor environments, we carry out a
+comprehensive study of exploring indoor white spaces. 
+
+
+As the initial step in exploring indoor white spaces opportunities in metropolises, we
+first present a large-scale measurement of outdoor and indoor TV spectrum occupancy in 30+ diverse locations in a
+typical metropolis Hong Kong. Our measurement results
+confirm abundant white spaces available for exploration in
+a wide range of areas in metropolises. In particular, more
+than 50\% and 70\% of the TV spectrum are white spaces in
+outdoor and indoor scenarios, respectively. While there are
+substantially more white spaces in indoor scenarios than in
+outdoor scenarios, there is no effective solution for identifying indoor white spaces. To fill in this gap, we propose
+the first system WISER (for White-space Indoor Spectrum
+EnhanceR), to identify and track indoor white spaces in a
+building, without requiring user devices to sense the spectrum. We discuss the design space of such systems and jus-
+tify our design choices using intensive real-world measurements. We design the architecture and algorithms to address
+the inherent challenges. We build a WISER prototype and
+carry out real-world experiments to evaluate its performance.
+Our results show that WISER can identify 30\%-50\% more
+indoor white space with negligible false alarms, as compared
+to alternative baseline approaches.
+
+Our follow-up and on-going works also investigate the architecture and algorithmic solutions for efficient utilization of the identified indoor white spaces.
+
+Note: this is a large project built up from one IE MSc research project, one IE undergrad research project, and one IE graduate research project.
+
+== Publication
+    - X. Ying, J. Zhang, L. Yan, G. Zhang, M. Chen, and R. Chandra, "Exploring Indoor White Spaces in Metropolises", in Proceedings of ACM MobiCom, Miami, Fl, USA, Sept. 30 - Oct. 4, 2013. \[[../papers/WISER.MOBICOM.13.pdf PDF]\]
+    - J. Zhang, W. Zhang, M. Chen, and Z. Wang, "WINET: Indoor White Space Network Design", in Proceedings of IEEE INFOCOM, Hong Kong, Apr. 26 - May 1, 2015. \[[../papers/WhiteNet.INFOCOM.15.pdf PDF]\]
+    - X. Ying, J. Zhang, L. Yan, Y. Chen, G. Zhang, M. Chen, and R. Chandra, "Exploring Indoor White Spaces in Metropolises", (invited), accepted for publication in ACM Transactions on Intelligent Systems and Technology. \[ final version to be available \]
+
+== Presentation
+
+    - Minghua Chen, "Exploring Indoor White Spaces in Metropolises", ACM MobiCom presentation. \[[WISER.MobiCom.13.web.ppsx PowerPoint]\]
+
+== Press Release and News Coverage:
+
+    - Press Release: [http://www.cpr.cuhk.edu.hk/en/press_detail.php?id=1637&s= CUHK] and Microsoft
+    - News Coverage: [http://broadcastengineering.com/transmitters/new-technology-makes-identifying-white-space-spectrum-easier BroadcastEngineering], [http://news.idg.no/cw/art.cfm?id=C7C941B9-A9EA-243D-1254966BF28D75A7 IDG], [http://www.fiercebroadbandwireless.com/story/microsoft-flaunts-wiser-method-identifying-tv-white-space/2013-10-02 FierceBroadbandWireless], [http://www.networkworld.com/news/2013/100213-whitespaces-indoors-274437.html NetworkWorld], [http://paper.wenweipo.com/2013/10/02/ED1310020011.htm WenWeiPo], and others (See [http://tvwhitespace.wordpress.com/2013/10/05/our-work-wiser-is-covered-by-many-medias/ here] for an incomplete list).
+    - News Discussion on [https://hk.news.yahoo.com/%E5%88%A9%E7%94%A8%E9%9B%BB%E8%A6%96%E7%99%BD%E9%A0%BB%E8%AD%9C-%E5%BB%BA%E8%A8%ADsuper-wifi-221117573.html SuperWiFi based on TV White Spaces] 

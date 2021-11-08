@@ -1,0 +1,64 @@
+# jemdoc: menu{MENU_sublevel}{}
+# jemdoc: addcss{../perweb.css}
+= Joint Market Bidding and Geographical Load Balancing for Energy-Efficient Datacenters
+Joint work with Ying Zhang, Lei Deng from The Chinese University of Hong Kong, Peijian Wang from Xi'An Jiaotong University, Jose Camacho from Universidad Carlos III de Madrid, and Xue Liu from McGill University
+
+
+The flourishing Internet-scale cloud services are revolutionizing the landscape
+of human activity. The rapid growth of such services has triggered
+an increasing deployment of massive energy-hungry geo-distributed datacenters
+worldwide. In this thesis, we consider the scenario where a cloud
+service provider (CSP) operates multiple geo-distributed datacenters to
+provide Internet-scale service. Our objective is to minimize the total electricity
+cost and bandwidth cost by dynamically routing workloads to datacenters
+with cheaper electricity, i.e., geographic load balancing (GLB).
+
+Most existing studies on GLB assume that the use of GLB has no impact
+on electricity prices, even though GLB increases local electricity demand
+variation. In practice, however, electricity retail prices are determined by
+how supply and demand are dynamically balanced by local electricity utilities.
+Firstly, in order to understand GLS’s economic potential and impact,
+we carry out a comprehensive study on how GLB interacts with electricity
+supply chains. In particular, we show that a separate GLB solution, which
+relies on utility companies for electricity procurement (EP), will make the
+electricity supply chains less efficient. Then, utility companies have to
+increase electricity retail prices to ensure certain profit margin. Consequently,
+CSP doing GLB may end up getting minor cost reduction or even
+paying higher electricity cost than not doing GLB, as shown in our case
+study based on real-world traces.
+
+Secondly, motivated by the recent practice of large CSPs moving into
+electricity markets, we allow CSPs to join the deregulated market directly
+and propose a joint GLB and EP solution. By considering the real-world
+market mechanisms and exploring the full design space of strategic bidding, we formulate a stochastic optimization problem to minimize the total cost
+expectation. Under the ideal setting where exact values of market prices
+and workloads are given, this problem reduces to a simple linear programming
+and is easy to solve. However, under the realistic setting where only
+distributional information of these variables is available when making decisions,
+the problem unfolds into a non-convex infinite-dimensional one
+and is challenging. One of our main contributions is to develop a nestedloop
+algorithm that is proven to solve the challenging problem optimally.
+Our study also highlights the intriguing role of uncertainty in demands
+and prices, measured by their variances. While uncertainty in electricity
+demands deteriorates the cost-saving performance of joint GLB and EP,
+counter-intuitively, uncertainty in market prices can be exploited to achieve
+a cost reduction even larger than the setting without price uncertainty.
+
+Finally, our trace-driven evaluations corroborate our theoretical results,
+demonstrate fast convergence of our algorithm, and show that it can reduce
+the cost for the CSP by up to 20\% as compared to baseline alternatives.
+
+This work demonstrates the necessity and benefit of the joint optimization
+framework when performing GLB. Results from this study provide
+guidelines for the CSP to cut its electricity bills by taking
+advantage of its presence in multiple deregulated markets, by exploring a second-chance opporutnity uniquely available to CSP.
+
+
+== Publications
+    . Y. Zhang, L. Deng, M. Chen, and P. Wang, "Joint Bidding and Geographical Load Balancing for Datacenters: Is Uncertainty a Blessing or a Curse?", in Proceedings of IEEE INFOCOM, Atlanta, GA, USA, May 1-4, 2017. \[[../papers/Joint.bidding.GLB.INFOCOM.17.pdf PDF]\]
+    . P. Wang, Y. Zhang, L. Deng, M. Chen, and X. Liu, "Second Chance Works Out Better: Saving More for Data Center Operator in Open Energy Market", (invited), in Proceedings of the 50th Annual Conference on Information Sciences and Systems (CISS), Princeton, NJ, US, March 16 - 18, 2016. \[[../papers/scecond_chance.ciss.16.pdf PDF]\]
+    . J. Camacho, Y. Zhang, M. Chen, and D. Chiu, "Balance your Bids before your Bits: The Economics of Geographic Load-Balancing", in Proceedings of the fifth International Conference on Future Energy Systems (ACM e-Energy), Cambridge, UK, June 11-13, 2014. \[[../papers/GLB.e-Energy.14.pdf PDF]\]
+
+# == Presentation
+#
+# - M. Chen, "Sending Perishable Messages: Delay-Constrained Network Information Flow". \[[../talks/Delay-Constrained.Network.Coding.to.share.July.2017.ppsx PowerPoint]\]

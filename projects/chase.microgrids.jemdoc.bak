@@ -1,0 +1,42 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Online Energy Generation Scheduling for Microgrids 
+Joint work with Lian Lu and Jinlong Tu from The Chinese University of Hong Kong, Chi-Kin Chau from 
+the Masdar Istitute, Zhao Xu from The Hong Kong Polytechnic University, and 
+Xiaojun Lin from Purdue University. 
+
+Microgrids represent an emerging paradigm of future electric power systems 
+that integrate both distributed and centralized generation. Two recent trends 
+in microgrids are the integration of local renewable energy sources (such as 
+wind farms) and the use of co-generation (i.e., to supply both electricity 
+and heat). However, these trends also bring unprecedented challenges to the 
+design of intelligent control strategies for the microgrids. Traditional 
+generation scheduling paradigms assuming perfect prediction of future 
+electricity supply and demand are no longer applicable to microgrids with 
+unpredictable renewable energy supply and co-generation (that depends on both 
+electricity and heat demand). In this paper, we study online algorithms for 
+the micro-grid generation scheduling problem with intermittent renewable 
+energy sources and co-generation, in order to maximize the cost-savings with 
+local generation. Based on insights from the structure of the offline optimal 
+solution, we propose a class of competitive online algorithms, called CHASE 
+(Competitive Heuristic Algorithm for Scheduling Energy-generation), that 
+track the offline optimal in an online fashion. Under certain settings, we 
+show that CHASE achieves the best competitive ratio of all deterministic 
+online algorithms. We also extend our algorithms to intelligently leverage on 
+limited prediction of the future, such as near-term demand or wind forecast. 
+By extensive empirical evaluation using real-world traces, we show that our 
+proposed algorithms can achieve near-offline-optimal performance. In a 
+representative scenario, CHASE leads to around 20% cost savings with no 
+future look-ahead at all, and the cost-savings further increase with limited 
+future look-ahead. 
+
+== Publications
+    - L. Lu, J. Tu, C. Chau, M. Chen, and X. Lin, "Online Energy Generation Scheduling for Microgrids with Intermittent Energy Sources and Co-Generation", in Proceedings of ACM SIGMETRICS, Pittsburgh, PA, US, June 17 - 21, 2013. \[[../papers/CHASE.SIGMETRICS.13.pdf PDF]\] Also available as a technical report. \[[http://arxiv.org/abs/1211.4473 PDF]\] (The first two authors are in alphabetical order.)
+    - L. Lu, J. Tu, C. Chau, M. Chen, Z. Xu, and X. Lin, "Towards Real-Time Energy Scheduling in Microgrids with Performance Guarantee", in Proceedings of IEEE Power and Energy Society General Meeting, Vancouver, BC, Canada, July 21 - 25, 2013. \[ final version to be available \]
+
+== Presentation
+
+    - M. Chen, "Competitive Energy Generation Scheduling for Microgrids". \[[dp.tom.and.jerry.ppsx PowerPoint]\]
+
+
+

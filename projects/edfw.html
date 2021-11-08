@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="../perweb.css" type="text/css" />
+<title>Error Detection By Fragile Watermarking</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Minghua Chen</div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="../bio.html">Biography</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="../projects.html">Projects</a></div>
+<div class="menu-item"><a href="../publications.html">Publications</a></div>
+<div class="menu-item"><a href="../team.html">Team</a></div>
+<div class="menu-item"><a href="../advice.html">To&nbsp;Students</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Error Detection By Fragile Watermarking</h1>
+<div id="subtitle">Joint work with Yun He from Tsinghua University, and Reginald Lagendijk from T.U. Delft.</div>
+</div>
+<p>In video communications over error-prone channels, compressed video streams are extremely sensitive to bit errors. Often random and burst bit errors impede correct decoding of parts of a received bit stream, even after interleaving and FEC protection. Video decoders normally utilize error concealment techniques to repair a damaged decoded frame, but the effectiveness of these error concealment schemes relies heavily on correctly locating errors in the bit stream. Traditional syntax based check error detection schemes performance badly, resulting in degraded image quality.</p>
+<p>In this work, we proposed to embed fragile watermarks into quantized DCT coefficients when encoding, to facilitate error detection at decoder side. By checking the integrity of the watermark at macro block (MB), decoder can locate the erroneous MB accurately; hence the error concealment works much better. A practical scheme called FEW is then proposed. The simulations results show FEW can significantly increase the erroneous MB correctly located rate, as compared to syntax based check scheme, at the cost of small quality loss in PSNR. There is a fundamental trade-off there between error detection capability, i.e. erroneous MB correctly located rate, and quality loss due to watermarking. Given H.263 codec, our work quantities the MSE loss due to watermarking in FEW. Analysis can be extended to different codec and different watermarking techniques.</p>
+<p>As watermarking techniques are originally developed for authorization and security purposes, our approach indicates new applications for watermarking techniques.</p>
+<p>The work was summarized in the following archives: </p>
+<ul>
+<li><p>M. Chen, Y. He and R. L. Lagendijk, &ldquo;A Fragile Watermark Error Detection Scheme For Wireless Video Communications&rdquo;, IEEE Trans. on Multimedia, Vol. 7, No. 2, April 2005. [<a href="../papers/trans.edfw.pdf">PDF</a>] </p>
+</li>
+<li><p>&ldquo;Fragile Digital Watermark Based Error Detection Technique&rdquo; (in Chinese), Master thesis, Tsinghua University, Beijing, China, June 2001. [<a href="../papers/thesis.master.pdf">PDF</a>] </p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 10/2021, by a modified version of <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-112827-1";
+urchinTracker();
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="../perweb.css" type="text/css" />
+<title>Energy-Efficient Timely Transportation of Long-Haul Heavy-Duty Truck</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Minghua Chen</div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="../bio.html">Biography</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="../projects.html">Projects</a></div>
+<div class="menu-item"><a href="../publications.html">Publications</a></div>
+<div class="menu-item"><a href="../team.html">Team</a></div>
+<div class="menu-item"><a href="../advice.html">To&nbsp;Students</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Energy-Efficient Timely Transportation of Long-Haul Heavy-Duty Truck</h1>
+<div id="subtitle">Joint work with Lei Deng and Mohammad Hajiesmaili from The Chinese University of Hong Kong, Chuansheng Dong from McGill University, and Haibo Zeng from Virginia Tech. </div>
+</div>
+<p>In the U.S., heavy-duty trucks haul more than 70% of all freight tonnage, and they consume 17.6% of energy in transportation sector (including 
+trucks, airplanes, pipelines, and railways) and contribute to around 5% of the greenhouse gas emission. Fuel cost is the largest operating cost (34%) 
+of truck owners/operators, and reducing fuel consumption is critical for cost-effective and environment-friendly heavy-duty truck operations.</p>
+<p>We recently developed three principled solutions to improve the energy efficiency of heavy-duty truck operation, by reducing the fuel consumption of idling and timely transportation. In our first work, we consider
+the problem of idling reduction under the uncertainty of vehicle
+stop time. We abstract it as a classic ski rental problem, and
+propose a constrained version with two statistics µB- and qB+ , the
+expected length of short stops and the probability of long stops.
+We develop online algorithms that combine the best of the wellknown
+deterministic and randomized schemes to minimize the
+worst case competitive ratio. We demonstrate the robustness of
+the algorithms in terms of both worst case guarantee and average
+case performance using simulation and real-world driving data.</p>
+<p>In the second work, we consider a timely transportation problem where a heavy-duty
+truck travels between two locations across the national
+highway system, subject to a hard deadline constraint.
+Our objective is to minimize the total fuel consumption
+of the truck, by optimizing both route planning and
+speed planning. The problem is important for cost-effective
+and environment-friendly truck operation, and it is uniquely
+challenging due to its combinatorial nature as well as the
+need of considering hard deadline constraint. We first show
+that the problem is NP-Complete; thus exact solution is
+computational prohibited unless P=NP. We then design a
+fully polynomial time approximation scheme (FPTAS) that
+attains an approximation ratio of 1+ \epsilon with a network-size
+induced complexity of O(mn^2/\epsilon^2), where m and n are the
+numbers of nodes and edges, respectively. While achieving
+highly-preferred theoretical performance guarantee, the proposed
+FPTAS still suffers from long running time when applying
+to national-wide highway systems with tens of thousands
+of nodes and edges. Leveraging elegant insights from
+studying the dual of the original problem, we design a fast
+heuristic solution with O(m+ n log n) complexity. The proposed
+heuristic allows us to tackle the energy-efficient timely
+transportation problem on large-scale national highway systems.
+We further characterize a condition under which our
+heuristic generates an optimal solution. We observe that
+the condition holds in most of the practical instances in numerical
+experiments, justifying the superior empirical performance
+of our heuristic. We carry out extensive numerical
+experiments using real-world truck data over the actual U.S.
+highway network. The results show that our proposed solutions
+achieve 17% (resp. 14%) fuel consumption reduction,
+as compared to a fastest path (resp. shortest path) algorithm
+adapted from common practice. We have also recently extended the above single-task solution to the case of multiple geographically-dispersed tasks. </p>
+<p>In the third work, we propose a new design option, called opportunistic 
+driving, to further optimize fuel consumption in face of time-varying traffic 
+conditions. The idea is for the truck to strategically wait (e.g., at highway 
+rest areas) for benign traffic conditions, to traverse subsequent road 
+segments at favorable speeds for saving fuel and reducing hours of driving at 
+the same time. We observe that the traffic condition and thus the speed 
+ranges are mostly stationary within certain durations of the day, and we term 
+them as phases where each phase is defined as a time interval with fixed 
+speed ranges. We formulate the fuel consumption minimization problem under 
+phased speed ranges, considering path planning, speed planning, and 
+opportunistic driving. We prove the problem is NP-hard, and develop a 
+dual-subgradient heuristic for instances of the scale of national highway 
+system. We characterize conditions under which the heuristic generates an 
+optimal solution. We carry out simulations based on real-world traces over 
+the US highway system. The results show that our scheme saves up to 26% fuel 
+as compared to shortest-/fastest- path baselines, of which 11% is 
+contributed by opportunistic driving. Meanwhile, opportunistic driving also 
+reduces driving time by 13% as compared to only optimizing path planning and 
+speed planning. As such, opportunistic driving offers a favorable design 
+option to emph{simultaneously} reduce fuel consumption and hours of driving. 
+Last but not least, our results highlight a perhaps surprising observation 
+that dynamic traffic conditions can be exploited to achieve fuel savings even 
+larger than those under stationary traffic conditions.</p>
+<p>Recently, with our collaborators, we have extended the work to consider the 
+problem of minimizing the emission instead of the fuel consumption. We 
+address the new challenge of the objective function being non-convex, by 
+exploiting the problem structure and manage to develop an efficient solution 
+with strong performance. </p>
+<p>Overall, we believe that de-carbonizing heavy-duty truck operation is important for the sustainable development of the logistics industry and society. 
+Our works serve as a call for participation.</p>
+<h2>Publications</h2>
+<ul>
+<li><p>C. Dong, H. Zeng, and M. Chen, &ldquo;Online Algorithms for Automotive Idling Reduction with Effective Statistics&rdquo;, IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, Special Section on Automotive Embedded Systems and Software, vol. 34, no. 11, November, 2015. [<a href="../papers/idling.car.TCAD.15.pdf">PDF</a>] (Its conference version appeared on IEEE/ACM DAC 2014.)</p>
+</li>
+<li><p>L. Deng, M. Hajiesmaili, M. Chen, and H. Zeng, &ldquo;Energy-Efficient Timely Transportation of Long-Haul Heavy-Duty Trucks&rdquo;, IEEE Transactions on Intelligent Transportation Systems, vol 19, issue 7, July 2018. [<a href="../papers/energy.efficient.trucking.TITS.17.pdf">PDF</a>] (A conference version appears in ACM e-Energy 2016 as a <font color=#E80000> Best Paper Award Candidate.</font>)</p>
+</li>
+<li><p>Q. Liu, H. Zeng, and M. Chen, &ldquo;Energy-Efficient Timely Truck Transportation for Geographically-Dispersed Tasks&rdquo;, accepted for publication in IEEE Transactions on Intelligent Transportation Systems. [<a href="../papers/EETT.multi.tasks.TITS.pdf">PDF</a>] (A conference version appears in ACM e-Energy 2018 as a <font color=#E80000> Best Paper Award Finalist.</font>)</p>
+</li>
+<li><p>W. Xu, Q. Liu, M. Chen, and H. Zeng, &ldquo;Ride the Tide of Traffic Conditions: Opportunistic Driving Improves Energy Efficiency of Long-Haul Timely Truck Transportation&rdquo;, in Proceedings of the 6th ACM International Conference on Systems for Energy-Efficient Built Environments, Cities, and Transportation (BuildSys 2019), New York, NY, USA, November 13-14, 2019. [<a href="../papers/od.buildsys.19.pdf">PDF</a>]</p>
+</li>
+<li><p>R. Zhou, Q. Liu, W. Xu, M. Chen, and H. Zeng, &ldquo;Minimizing Emission for Timely Truck Transportation with Adaptive Fuel Injection&rdquo;, in Proceedings of the 7th ACM International Conference on Systems for Energy-Efficient Built Environments, Cities, and Transportation (ACM BuildSys 2020), Yokohama, Japan, November 16-19, 2020. [<a href="../papers/emission-efficient.trucking.buildsys.20.pdf">PDF</a>]</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 10/2021, by a modified version of <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-112827-1";
+urchinTracker();
+</script>
+</body>
+</html>

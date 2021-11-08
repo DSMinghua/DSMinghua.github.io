@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="../perweb.css" type="text/css" />
+<title>The Benefit of Proactive Serving in User Delay Reduction</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Minghua Chen</div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="../bio.html">Biography</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="../projects.html">Projects</a></div>
+<div class="menu-item"><a href="../publications.html">Publications</a></div>
+<div class="menu-item"><a href="../team.html">Team</a></div>
+<div class="menu-item"><a href="../advice.html">To&nbsp;Students</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>The Benefit of Proactive Serving in User Delay Reduction</h1>
+<div id="subtitle">Joint work with Shaoquan Zhang from The Chinese University of Hong Kong, Longbo Huang from Tsinghua University, and Xin Liu from University of California, Davis. </div>
+</div>
+<p>In online service systems, the delay experienced
+by users from service request to service completion is one of
+the most critical performance metrics. To improve user delay
+experience, recent industrial practices suggest a modern system
+design mechanism: proactive serving, where the service system
+predicts future user requests and allocates its capacity to serve
+these upcoming requests proactively. This approach complements
+the conventional mechanism of capability boosting. In this paper,
+we propose queuing models for online service systems with
+proactive serving capability and characterize the user delay
+reduction by proactive serving. In particular, we show that
+proactive serving decreases average delay exponentially (as a
+function of the prediction window size) in the cases where
+service time follows light-tailed distributions. Furthermore, the
+exponential decrease in user delay is robust against prediction
+errors (in terms of miss detection and false alarm) and user
+demand fluctuation. Compared to the conventional mechanism
+of capability boosting, proactive serving is more effective in
+decreasing delay when the system is in the light-load regime.
+Our trace-driven evaluations demonstrate the practical power of
+proactive serving: for example, for the data trace of light-tailed
+Youtube videos, the average user delay decreases by 50% when
+the system predicts 60 seconds ahead. Our results provide, from
+a queuing-theoretical perspective, justifications for the practical
+application of proactive serving in online service systems.</p>
+<p>In a sister paper, we apply the idea of &ldquo;distribution shifting&rdquo; to leverage prediction to improve delay performance in stochastic-optimization based scheduling algorithms. </p>
+<h2>Publications</h2>
+<ul>
+<li><p>S. Zhang, L. Huang, M. Chen, and X. Lin, &ldquo;Proactive Serving Decreases User Delay Exponentially: The Light-tailed Service Time Case&rdquo;, accepted for publication in IEEE/ACM Transactions on Networking. [<a href="../papers/proactive.serving.ToN.16.pdf">PDF</a>]</p>
+</li>
+<li><p>L. Huang, S. Zhang, M. Chen, and X. Liu, &ldquo;When Backpressure Meets Predictive Scheduling&rdquo;, IEEE/ACM Transactions on Networking, vol. 24, issue 4, Aug. 2016. [<a href="../papers/predictive.scheduling.ToN.15.pdf">PDF</a>] (Its conference version appeared on ACM MobiHoc 2014 as one of the final three Best Paper Award Candidates.)</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 10/2021, by a modified version of <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-112827-1";
+urchinTracker();
+</script>
+</body>
+</html>

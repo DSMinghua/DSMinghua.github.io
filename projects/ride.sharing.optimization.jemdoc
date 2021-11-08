@@ -1,0 +1,51 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Demand-Aware Ride-Sharing Optimization
+Joint work with Qiulin Lin, Wenjie Xu, Lei Deng from CUHK, Jingzhou Sun from Tsinghua University, and Xiaojun Lin from Purdue University
+
+
+Dynamic ride-sharing or ride-sharing in short, is a modern paradigm for urban 
+mobility, where passengers with similar itineraries and time schedules share 
+riders on short-notice. Popular ride-sharing services, such as uberPOOL and 
+Lyftline, not only can provide convenient and cost-effective transportation 
+to individuals, but also can create significant positive impacts on 
+congestion and pollution. Take Manhattan as an example. The annual cost of 
+congestion is more than $20 billion, which includes 24 million hours of time 
+lost to sitting in traffic and an extra 500 million gallons of fuel burned. 
+With ride-sharing, it has been shown show that 98\% of the Manhattan rides 
+currently served by over 13,000 taxis could be served with just 3,000 
+vehicles of capacity four, with marginal increment in the trip delay. The 
+aggregate trip distance, an indicator of commute time and gasoline 
+consumption, can also be reduced by more than 30\%. Overall, ride-sharing 
+offers a clear opportunity for alleviating congestion, reducing pollution, 
+and improving transportation efficiency. 
+
+In this work, we develop a probabilistic demand-aware framework to tackle a 
+key challenge in ride-sharing systems, namely joint 
+optimization of request-vehicle assignment and routing for a fleet of 
+vehicles. 
+
+The framework can maximize the expected number of passengers picked up by the 
+fleet, given a probability distribution of future demand. A salient feature 
+of our framework is to assign requests to vehicles in a probabilistic manner. 
+It differentiates our work from existing ones and allows us to explore a 
+richer design space to tackle the request-to-vehicle assignment puzzle with 
+performance guarantee but still keeping the final solution practically 
+implementable. The optimization problem is non-convex, combinatorial, and 
+NPhard in nature. As a key contribution, we explore the problem structure and 
+propose an elegant approximation of the objective function to develop a 
+dual-subgradient heuristic. We characterize a condition under which the 
+heuristic generates an (1 − 1/e) approximation solution. Our solution is 
+simple and scalable, amendable for practical implementation. We carry out 
+numerical experiments based on real-world travel request traces in Manhattan. 
+The results show that as compared to a conventional demand-oblivious scheme, 
+our demand-aware solution improves the total number of passenger pickups by 
+up to 46\%. We also show that joint optimization at the fleet level 
+achieves an increment in the number of pickups by more than 19\%, as compared 
+to that each vehicle carry out optimization separately.
+
+
+== Publications 
+
+    - Q. Lin, L. Deng, J. Sun, and M. Chen, "Optimal Demand-Aware Ride-Sharing Routing", in Proceedings of IEEE INFOCOM, Honolulu, HI, USA, April 16-19, 2018. \[[../papers/demand.aware.ride.sharing.routing.INFOCOM.18.pdf PDF]\]  
+    - Q. Lin, W. Xu, M. Chen, and X. Lin, "A Probabilistic Approach for Demand-Aware Ride-Sharing Optimization", in Proceedings of the 20th ACM International Symposium on Mobile Ad Hoc Networking and Computing (ACM MobiHoc 2019), Catania, Italy, July 2-5, 2019. \[[../papers/ride.sharing.MobiHoc.19.pdf PDF]\]    

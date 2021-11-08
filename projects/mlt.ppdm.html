@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="../perweb.css" type="text/css" />
+<title>Enable Multilevel Trust in Privacy Preserving Data Mining</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Minghua Chen</div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="../bio.html">Biography</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="../projects.html">Projects</a></div>
+<div class="menu-item"><a href="../publications.html">Publications</a></div>
+<div class="menu-item"><a href="../team.html">Team</a></div>
+<div class="menu-item"><a href="../advice.html">To&nbsp;Students</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Enable Multilevel Trust in Privacy Preserving Data Mining</h1>
+<div id="subtitle">Joint work with Yaping Li from UC Berkeley, Qiwei Li, Wei Zhang, Xiaokui Xiao, and Yufei Tao from The Chinese University of Hong Kong.</div>
+</div>
+<p>Privacy Preserving Data Mining (PPDM) addresses the problem of
+developing accurate models about aggregated data without access to
+precise information in individual data record. A widely studied
+perturbation-based PPDM approach introduces random
+perturbation to individual values to preserve privacy before data is
+published. Previous solutions of this approach are limited in their
+tacit assumption of a single-level trust on data miners.</p>
+<p>In this work, we relax this assumption and expand the scope of
+perturbation-based PPDM to Multi-Level Trust (MLT-PPDM). In our
+problem setting, the more trusted a data miner is, the less
+perturbed copy of the data it receives.
+The key challenge lies in preventing malicious data miners at different trust
+levels from jointly inferring additional information about the original data
+that is not allowed by the data owner. We address this
+challenge by properly correlating perturbation &lt;i&gt;across&lt;/i&gt; different
+trust levels in a non-trivial fashion. We prove that our solution is robust against colluding attacks with
+respect to our privacy goal. That is, even when attackers collude arbitrarily, our solution prevents
+them from reconstructing the original data more accurately than the
+best effort by any individual attacker. One salient
+feature of our solution is that it allows a data owner to generate
+perturbed copies of its data for arbitrary trust levels
+on-demand. This feature offers data owners maximum flexibility.</p>
+<p>This series of work are initiated from our early technical report from EECS Department University of California, Berkeley Tech. Report No. UCB/EECS-2008-156, December 13, 2008. [<a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-156.html">PDF</a>]</p>
+<p>Our initial investigation was based on Gaussian perturbations. 
+Dr. Xiao Xiaokui extended the study to the setting of uniform 
+perturbations. One advantage of using uniform perturbation for 
+multi-level perturbation is that the corresponding perturbation 
+algorithm has near-optimal storage and complexity performance. </p>
+<h2>Publication</h2>
+<ul>
+<li><p>Y. Li, M. Chen, Q. Li, and W. Zhang, &ldquo;Enabling Multi-level Trust in Privacy Preserving Data Mining&rdquo;, IEEE Trans. on Knowledge and Data Engineering, vol. 24, issue 9, pages 1598 - 1612, Sept. 2012. [<a href="../papers/MLT-PPDM.TKDE.12.pdf">PDF</a>] The early technical report version is <a href="http://www.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-156.html">here</a>. The final long archived version is <a href="http://arxiv.org/abs/1104.0459">here</a>. </p>
+</li>
+</ul>
+<ul>
+<li><p>X. Xiao, Y. Tao, and M. Chen, &ldquo;Optimal Random Perturbation at Multiple Privacy Levels&rdquo;, Proceedings of the 35th International Conference on Very Large Data Bases (VLDB 2009),
+Lyon, France, Aug. 24-28, 2009. [<a href="https://dl.acm.org/doi/10.14778/1687627.1687719">PDF</a>]</p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 10/2021, by a modified version of <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-112827-1";
+urchinTracker();
+</script>
+</body>
+</html>

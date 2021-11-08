@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="../perweb.css" type="text/css" />
+<title>Demand-Aware Ride-Sharing Optimization</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Minghua Chen</div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="../bio.html">Biography</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="../projects.html">Projects</a></div>
+<div class="menu-item"><a href="../publications.html">Publications</a></div>
+<div class="menu-item"><a href="../team.html">Team</a></div>
+<div class="menu-item"><a href="../advice.html">To&nbsp;Students</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Demand-Aware Ride-Sharing Optimization</h1>
+<div id="subtitle">Joint work with Qiulin Lin, Wenjie Xu, Lei Deng from CUHK, Jingzhou Sun from Tsinghua University, and Xiaojun Lin from Purdue University</div>
+</div>
+<p>Dynamic ride-sharing or ride-sharing in short, is a modern paradigm for urban 
+mobility, where passengers with similar itineraries and time schedules share 
+riders on short-notice. Popular ride-sharing services, such as uberPOOL and 
+Lyftline, not only can provide convenient and cost-effective transportation 
+to individuals, but also can create significant positive impacts on 
+congestion and pollution. Take Manhattan as an example. The annual cost of 
+congestion is more than $20 billion, which includes 24 million hours of time 
+lost to sitting in traffic and an extra 500 million gallons of fuel burned. 
+With ride-sharing, it has been shown show that 98% of the Manhattan rides 
+currently served by over 13,000 taxis could be served with just 3,000 
+vehicles of capacity four, with marginal increment in the trip delay. The 
+aggregate trip distance, an indicator of commute time and gasoline 
+consumption, can also be reduced by more than 30%. Overall, ride-sharing 
+offers a clear opportunity for alleviating congestion, reducing pollution, 
+and improving transportation efficiency. </p>
+<p>In this work, we develop a probabilistic demand-aware framework to tackle a 
+key challenge in ride-sharing systems, namely joint 
+optimization of request-vehicle assignment and routing for a fleet of 
+vehicles. </p>
+<p>The framework can maximize the expected number of passengers picked up by the 
+fleet, given a probability distribution of future demand. A salient feature 
+of our framework is to assign requests to vehicles in a probabilistic manner. 
+It differentiates our work from existing ones and allows us to explore a 
+richer design space to tackle the request-to-vehicle assignment puzzle with 
+performance guarantee but still keeping the final solution practically 
+implementable. The optimization problem is non-convex, combinatorial, and 
+NPhard in nature. As a key contribution, we explore the problem structure and 
+propose an elegant approximation of the objective function to develop a 
+dual-subgradient heuristic. We characterize a condition under which the 
+heuristic generates an (1 − 1/e) approximation solution. Our solution is 
+simple and scalable, amendable for practical implementation. We carry out 
+numerical experiments based on real-world travel request traces in Manhattan. 
+The results show that as compared to a conventional demand-oblivious scheme, 
+our demand-aware solution improves the total number of passenger pickups by 
+up to 46%. We also show that joint optimization at the fleet level 
+achieves an increment in the number of pickups by more than 19%, as compared 
+to that each vehicle carry out optimization separately.</p>
+<h2>Publications </h2>
+<ul>
+<li><p>Q. Lin, L. Deng, J. Sun, and M. Chen, &ldquo;Optimal Demand-Aware Ride-Sharing Routing&rdquo;, in Proceedings of IEEE INFOCOM, Honolulu, HI, USA, April 16-19, 2018. [<a href="../papers/demand.aware.ride.sharing.routing.INFOCOM.18.pdf">PDF</a>]  </p>
+</li>
+<li><p>Q. Lin, W. Xu, M. Chen, and X. Lin, &ldquo;A Probabilistic Approach for Demand-Aware Ride-Sharing Optimization&rdquo;, in Proceedings of the 20th ACM International Symposium on Mobile Ad Hoc Networking and Computing (ACM MobiHoc 2019), Catania, Italy, July 2-5, 2019. [<a href="../papers/ride.sharing.MobiHoc.19.pdf">PDF</a>]    </p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 10/2021, by a modified version of <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-112827-1";
+urchinTracker();
+</script>
+</body>
+</html>

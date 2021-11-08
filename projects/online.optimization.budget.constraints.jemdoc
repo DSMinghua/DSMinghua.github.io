@@ -1,0 +1,28 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Competitive Online Optimization under Inventory Constraints
+Joint work with Qiulin Lin, Hanling Yi from The Chinese University of Hong Kong, John Pang and Adam Wierman from 
+Caltech, Mike Honig from Northwestern University, and Yuanzhang Xiao from University of Hawaii.
+
+We study online optimization under inventory (budget) constraints. While online optimization is a well-studied topic, versions with inventory constraints have proven difficult. We consider
+a formulation of inventory-constrained optimization that is a generalization of the classic one-way trading problem and has a wide
+range of applications. We present a new algorithmic framework,
+CR-Pursuit, and prove that it achieves the minimal competitive ratio among all deterministic algorithms (up to a problem-dependent
+constant factor) for inventory-constrained online optimization. Our
+algorithm and its analysis not only simplify and unify the state-ofthe-art results for the standard one-way trading problem, but they
+also establish novel bounds for generalizations including concave
+revenue functions. For example, for one-way trading with price
+elasticity , the CR-Pursuit algorithm achieves a competitive ratio
+that is within a small additive constant (i.e., 1/3) to the lower bound
+of ln\theta +1, where \theta is the ratio between the maximum and minimum
+base prices. 
+
+
+In another work, we show that the CR-Pursuit framework can also be used to provide
+"beyond worst case" results by parameterizing the bound in different ways by, for example, utilizing properties of the instances relevant
+to the online EV charging scenario with both charging cost and user dissatisfaction taken into account, and adaptively considering the input seen so far. 
+The result is an online algorithm with the best possible worst-case performance as well as adaptively optimized average-case performance.
+
+== Publications
+    - Q. Lin\*, H. Yi\*, J. Pang, M. Chen, A. Wierman, M. Honig, and Y. Xiao, "Competitive Online Optimization under Inventory Constraints", in Proceedings of ACM SIGMETRICS \/ IFIP Performance, Phoenix, Arizona, June 24 - 28, 2019. \[[../papers/CR-Pursuit.SIGMETRICS.19.pdf PDF]\]  (The first two authors contribute equally to the work.)
+    - H. Yi\*, Q. Lin\*, and M. Chen, "Balancing Cost and Dissatisfaction in Online EV Charging under Real-time Pricing", in Proceedings of IEEE INFOCOM, Paris, France, April 29 - May 2, 2019. \[[../papers/online.ev.charging.INFOCOM.19.pdf PDF]\]  (The first two authors contribute equally to the work.)

@@ -1,0 +1,40 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= DeepOPF: Deep Neural Networks for Optimal Power Flow
+
+Note: We maintain [ML_OPF_wiki.html a list of related papers on machine learning for optimal power flow].
+
+This is the first work in the literature applying neural networks to *directly* solve the optimal power flow (OPF) problem. Previous learning-based solutions employ machine learning techniques as a module to facilitate conventional OPF solvers. 
+
+In the first paper listed below, we develop DeepOPF as a Deep Neural Network 
+(DNN) based approach for solving direct current optimal power flow (DC-OPF) 
+problems. DeepOPF is inspired by the observation that solving DC-OPF for a 
+given power network is equivalent to characterizing a high-dimensional 
+mapping between the load inputs and the dispatch and transmission decisions. 
+
+We first train a DNN to learn the mapping and predict the generations from 
+the load inputs. We then directly reconstruct the phase angles from the 
+generations and loads by using the power flow equations. Such a 
+predict-and-reconstruct approach reduces the dimension of the mapping to 
+learn, subsequently cutting down the size of the DNN and the amount of 
+training data needed. We further derive a condition for tuning the size of 
+the DNN according to the desired approximation accuracy of the 
+load-generation mapping. We develop a post-processing procedure based on 
+l1-projection to ensure the feasibility of the obtained solution, which can 
+be of independent interest. Simulation results for IEEE test cases show that 
+DeepOPF generates feasible solutions with less than 0.2% optimality loss, 
+while speeding up the computation time by up to two orders of magnitude as 
+compared to a state-of-the-art solver. 
+
+We have also extended the aobve approach to the non-convex AC-OPF settings 
+and the most recent results show that DeepOPF can achieve 15,000x speedup for 
+solving AC-OPF problems over a 2000-bus test case with minor optimality loss, 
+and the obtained solutions are feasibile with or without simple 
+postprocessing. 
+
+== Publications
+    - X. Pan, T. Zhao, and M. Chen, "DeepOPF: Deep Neural Network for DC Optimal Power Flow", in Proceedings of the 10th IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (IEEE SmartGridComm 2019), Beijing, China, October 21 - 24, 2019. \[[../papers/DeepDCOPF.smartgridcomm.19.pdf PDF]\] Also available as technical report posted onto arXiv in May 2019. \[[https://arxiv.org/abs/1905.04479 PDF]\]
+    - X. Pan, T. Zhao, M. Chen, and S. Zhang, "DeepOPF: A Deep Neural Network Approach for Security-Constrained DC Optimal Power Flow", IEEE Transactions on Power Systems, vol. 36, issue 3, pp. 1725 - 1735, May 2021. \[[../papers/DeepOPF.TPS.20.pdf PDF]\] Also available as technical report posted onto arXiv in Oct. 2019. \[[https://arxiv.org/abs/1910.14448 PDF]\]
+    - X. Pan, M. Chen, T. Zhao, and S. H. Low, "DeepOPF: A Feasibility-Optimized Deep Neural Network Approach for AC Optimal Power Flow Problems", arXiv preprint arXiv:2007.01002, 2020. \[[https://arxiv.org/abs/2007.01002 PDF]\]
+    - T. Zhao, X. Pan, M. Chen, A. Venzke, and S. H. Low, "DeepOPF+: A Deep Neural Network Approach for DC Optimal Power Flow for Ensuring Feasibility", in Proceedings of the 11th IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (IEEE SmartGridComm 2020), virtual conference, Nov. 11 - 13, 2020. \[[../papers/DeepOPF.Plus.DC.20.pdf PDF]\]
+    - W. Huang, X. Pan, M. Chen, and S. H. Low, "DeepOPF-V: Solving AC-OPF Problems Efficiently", IEEE Transactions on Power Systems, accepted, 2021. Technical report as arXiv preprint arXiv:2007.01002, 2021. \[[https://arxiv.org/abs/2103.11793 PDF]\]

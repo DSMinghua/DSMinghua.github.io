@@ -1,0 +1,81 @@
+# jemdoc: menu{MENU_sublevel}{}
+# jemdoc: addcss{../perweb.css}
+= Rate Control for Streaming over Wireless
+Joint work with Avideh Zakhor from UC Berkeley.
+
+Rate control is an important issue in video streaming
+applications for both wired and wireless networks. A widely
+accepted rate control method in wired networks is equation based
+rate control, in which the TCP Friendly rate is determined as a
+function of packet loss rate, round trip time and packet size.
+This approach, also known as TFRC, assumes that packet loss in
+wired networks is primarily due to congestion, and as such is
+not applicable to wireless networks in which the bulk of packet
+loss is due to error at the physical layer. Hence, for streaming
+over wireless, rate control is still an open issue. A
+traditional point of view is to distinguish between packet loss
+caused by congestions and that due to wireless channel error, by
+modifications to the network infrastructure or protocol. Thus,
+by not taking into account the packet loss due to wireless
+channel error when determining the sending rate, the new
+problem, i.e. rate control for streaming over wireless, is
+translated into an old one, i.e. rate control for streaming over
+wired network, for which a known solution exists. The solutions
+based on this point of view are not easy to deploy because they
+require modifications to network infrastructure or protocol.
+
+In this project we propose new insights into this old problem:
+one can achieve highest throughput and lowest packet loss rate,
+without distinguishing between packet loss caused by congestion
+and that due to wireless error. Specifically, we argue that from
+application level point of view, it is conceivable to use
+multiple TFRC connections to increase the total throughput to
+pursue full utilization, without distinguishing between packet
+loss caused by congestion and that due to wireless error.
+Further, we show this is actually one way to get the optimal
+performance, i.e. highest throughput and lowest packet loss
+rate, given we open an appropriate number of connections with an
+appropriate packet size. In order to determine the optimal
+number of connections to open, we design a simple algorithm
+based on average queuing delay measurements. The fundamental
+idea is to increase the number of connections if the average
+queuing delay is less than a threshold, and to decrease
+otherwise. The increasing and decreasing algorithm is Inverse
+Increase and Additive Decrease (IIAD).
+
+NS-2 simulations and real experiments on Verizon Wireless 1xRTT
+CDMA data network have been carried out to evaluate the
+performance, and to validate the basic idea. Our approach is
+also applicable to TCP over wireless. This work indicates new
+class of approaches to do flow control over wireless network,
+which motivates my thesis research.
+
+The idea first appeared in the following paper:
+
+    - M. Chen and A. Zakhor, "Rate Control for Streaming Video
+    over Wireless", Proceeding of Infocom 2004, Hongkong, China,
+    March, 2004, pp. 1181-1190. \[[../papers/infocom.2004.pdf
+    PDF]\]
+
+An improved rate control scheme based on mimicing MULTFRC by modifying TFRC protocol, namely All-in-one TFRC (AIO-TFRC), is also proposed as an alternative solution. The advantages are smaller overhead and better bandwidth utilization. The paper is here:
+
+    - M. Chen and A. Zakhor, "AIO-TFRC: A light-weighted rate
+    control scheme for streaming over wireless", (invited),
+    Proceedings of the IEEE WirelessCom 2005: Symposium on
+    Multimedia over Wireless, Maui, Hawaii, June, 2005. (A
+    runner-up for the Best Paper Award, 3 out of 250+ accepted
+    papers)
+    \[[../papers/wirelesscom.05.submission.pdf PDF]\]
+
+As archives, the most thorough version of the work appeared in IEEE Trans. on Multimedia, as well as in my PhD thesis:
+
+    - M. Chen and A. Zakhor, "Multiple TFRC Connections Based
+    Rate Control for Wireless Networks", IEEE Trans. on
+    Multimedia, vol. 8, issue 5, Oct. 2006, pp. 1045-1062.
+    \[[http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=1703518&isnumber=35947 PDF]\] \n \red IEEE
+Transactions on Multimedia Prize Paper Award, 2009.\red
+
+    - "A General Framework for Flow Control in Wireless
+Networks", PhD Dissertation, U.C. Berkeley, 2006.
+\[[../papers/phd.thesis.pdf PDF]\] \n \red Eli Jury Award, EECS Department, U.C.
+Berkeley, 2007.\red

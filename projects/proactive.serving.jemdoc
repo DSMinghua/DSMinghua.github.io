@@ -1,0 +1,41 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= The Benefit of Proactive Serving in User Delay Reduction
+Joint work with Shaoquan Zhang from The Chinese University of Hong Kong, Longbo Huang from Tsinghua University, and Xin Liu from University of California, Davis. 
+
+In online service systems, the delay experienced
+by users from service request to service completion is one of
+the most critical performance metrics. To improve user delay
+experience, recent industrial practices suggest a modern system
+design mechanism: proactive serving, where the service system
+predicts future user requests and allocates its capacity to serve
+these upcoming requests proactively. This approach complements
+the conventional mechanism of capability boosting. In this paper,
+we propose queuing models for online service systems with
+proactive serving capability and characterize the user delay
+reduction by proactive serving. In particular, we show that
+proactive serving decreases average delay exponentially (as a
+function of the prediction window size) in the cases where
+service time follows light-tailed distributions. Furthermore, the
+exponential decrease in user delay is robust against prediction
+errors (in terms of miss detection and false alarm) and user
+demand fluctuation. Compared to the conventional mechanism
+of capability boosting, proactive serving is more effective in
+decreasing delay when the system is in the light-load regime.
+Our trace-driven evaluations demonstrate the practical power of
+proactive serving: for example, for the data trace of light-tailed
+Youtube videos, the average user delay decreases by 50% when
+the system predicts 60 seconds ahead. Our results provide, from
+a queuing-theoretical perspective, justifications for the practical
+application of proactive serving in online service systems.
+
+In a sister paper, we apply the idea of "distribution shifting" to leverage prediction to improve delay performance in stochastic-optimization based scheduling algorithms. 
+
+
+== Publications
+    - S. Zhang, L. Huang, M. Chen, and X. Lin, "Proactive Serving Decreases User Delay Exponentially: The Light-tailed Service Time Case", accepted for publication in IEEE/ACM Transactions on Networking. \[[../papers/proactive.serving.ToN.16.pdf PDF]\]
+    - L. Huang, S. Zhang, M. Chen, and X. Liu, "When Backpressure Meets Predictive Scheduling", IEEE/ACM Transactions on Networking, vol. 24, issue 4, Aug. 2016. \[[../papers/predictive.scheduling.ToN.15.pdf PDF]\] (Its conference version appeared on ACM MobiHoc 2014 as one of the final three Best Paper Award Candidates.)
+
+
+
+

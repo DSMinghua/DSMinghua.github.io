@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="../perweb.css" type="text/css" />
+<title>Rate Control for Streaming over Wireless</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Minghua Chen</div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="../bio.html">Biography</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="../projects.html">Projects</a></div>
+<div class="menu-item"><a href="../publications.html">Publications</a></div>
+<div class="menu-item"><a href="../team.html">Team</a></div>
+<div class="menu-item"><a href="../advice.html">To&nbsp;Students</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Rate Control for Streaming over Wireless</h1>
+<div id="subtitle">Joint work with Avideh Zakhor from UC Berkeley.</div>
+</div>
+<p>Rate control is an important issue in video streaming
+applications for both wired and wireless networks. A widely
+accepted rate control method in wired networks is equation based
+rate control, in which the TCP Friendly rate is determined as a
+function of packet loss rate, round trip time and packet size.
+This approach, also known as TFRC, assumes that packet loss in
+wired networks is primarily due to congestion, and as such is
+not applicable to wireless networks in which the bulk of packet
+loss is due to error at the physical layer. Hence, for streaming
+over wireless, rate control is still an open issue. A
+traditional point of view is to distinguish between packet loss
+caused by congestions and that due to wireless channel error, by
+modifications to the network infrastructure or protocol. Thus,
+by not taking into account the packet loss due to wireless
+channel error when determining the sending rate, the new
+problem, i.e. rate control for streaming over wireless, is
+translated into an old one, i.e. rate control for streaming over
+wired network, for which a known solution exists. The solutions
+based on this point of view are not easy to deploy because they
+require modifications to network infrastructure or protocol.</p>
+<p>In this project we propose new insights into this old problem:
+one can achieve highest throughput and lowest packet loss rate,
+without distinguishing between packet loss caused by congestion
+and that due to wireless error. Specifically, we argue that from
+application level point of view, it is conceivable to use
+multiple TFRC connections to increase the total throughput to
+pursue full utilization, without distinguishing between packet
+loss caused by congestion and that due to wireless error.
+Further, we show this is actually one way to get the optimal
+performance, i.e. highest throughput and lowest packet loss
+rate, given we open an appropriate number of connections with an
+appropriate packet size. In order to determine the optimal
+number of connections to open, we design a simple algorithm
+based on average queuing delay measurements. The fundamental
+idea is to increase the number of connections if the average
+queuing delay is less than a threshold, and to decrease
+otherwise. The increasing and decreasing algorithm is Inverse
+Increase and Additive Decrease (IIAD).</p>
+<p>NS-2 simulations and real experiments on Verizon Wireless 1xRTT
+CDMA data network have been carried out to evaluate the
+performance, and to validate the basic idea. Our approach is
+also applicable to TCP over wireless. This work indicates new
+class of approaches to do flow control over wireless network,
+which motivates my thesis research.</p>
+<p>The idea first appeared in the following paper:</p>
+<ul>
+<li><p>M. Chen and A. Zakhor, &ldquo;Rate Control for Streaming Video
+over Wireless&rdquo;, Proceeding of Infocom 2004, Hongkong, China,
+March, 2004, pp. 1181-1190. [<a href="../papers/infocom.2004.pdf">PDF</a>]</p>
+</li>
+</ul>
+<p>An improved rate control scheme based on mimicing MULTFRC by modifying TFRC protocol, namely All-in-one TFRC (AIO-TFRC), is also proposed as an alternative solution. The advantages are smaller overhead and better bandwidth utilization. The paper is here:</p>
+<ul>
+<li><p>M. Chen and A. Zakhor, &ldquo;AIO-TFRC: A light-weighted rate
+control scheme for streaming over wireless&rdquo;, (invited),
+Proceedings of the IEEE WirelessCom 2005: Symposium on
+Multimedia over Wireless, Maui, Hawaii, June, 2005. (A
+runner-up for the Best Paper Award, 3 out of 250+ accepted
+papers)
+[<a href="../papers/wirelesscom.05.submission.pdf">PDF</a>]</p>
+</li>
+</ul>
+<p>As archives, the most thorough version of the work appeared in IEEE Trans. on Multimedia, as well as in my PhD thesis:</p>
+<ul>
+<li><p>M. Chen and A. Zakhor, &ldquo;Multiple TFRC Connections Based
+Rate Control for Wireless Networks&rdquo;, IEEE Trans. on
+Multimedia, vol. 8, issue 5, Oct. 2006, pp. 1045-1062.
+[<a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=1703518&amp;isnumber=35947">PDF</a>] <br /> <font color=#E80000> IEEE
+Transactions on Multimedia Prize Paper Award, 2009.</font></p>
+</li>
+</ul>
+<ul>
+<li><p>&ldquo;A General Framework for Flow Control in Wireless
+Networks&rdquo;, PhD Dissertation, U.C. Berkeley, 2006.
+[<a href="../papers/phd.thesis.pdf">PDF</a>] <br /> <font color=#E80000> Eli Jury Award, EECS Department, U.C.
+Berkeley, 2007.</font></p>
+</li>
+</ul>
+<div id="footer">
+<div id="footer-text">
+Page generated 10/2021, by a modified version of <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-112827-1";
+urchinTracker();
+</script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+# jemdoc: menu{MENU_sublevel}{}
+# jemdoc: addcss{../perweb.css}
+= Flow Control over Wireless and A General Two Timescale Flow Control Framework
+Joint work with Avideh Zakhor, Alessandro Abate, and Shankar S. Sastry from UC Berkeley.
+
+Flow control, including congestion control for data transmission, and rate control for multimedia streaming, is an important issue in information transmission for both wired and wireless networks. Proper flow control allows users to fairly and fully utilize available bandwidth without the possibility of congestion collapse. Failure to apply proper flow control may result in serious performance degradation in a network.
+
+Although the problem of flow control has been successfully addressed in wired networks, it is still open in wireless networks. Current widely accepted solutions, such as TCP, assume that congestion is the only cause of packet loss, and as such, are not applicable to wireless networks in which the bulk of packet loss is due to errors at the physical layer. We show that this often results in bandwidth underutilization in wireless networks. This problem is becoming increasingly more serious as wireless data and multimedia services are being rapidly deployed commercially on carries throughout the world with data rates of up to one Mbps.
+
+In this project, we first formulate flow control in wireless networks as a convex optimization problem. We then propose a new class of solutions that properly adjust the number of connections of a user, to fully utilize wireless bandwidth and minimize end-to-end packet loss. Our solution differs from all existing schemes introduced in the past decade in the following ways:
+
+    - First, it is theoretically guaranteed to be optimal, stable and scalable. Practically, in a network with arbitrary topology, arbitrary number of users, and arbitrary initial source rates, our proposed schemes guarantee all users' source rates to globally exponentially converge to an equilibrium. This convergence guarantees no congestion collapse in the network. At the equilibrium, all bottlenecks are fully utilized and users are fair to each other. Furthermore, proposed schemes are fair to TCP/TFRC protocols, and are therefore amenable to incremental deployment in the current Internet where TCP is dominant.
+    - Second, our proposed schemes are end-to-end and require modifications to neither infrastructure nor transport protocol stack, making it easy to deploy in practice.
+
+Based on this approach, we have designed practical schemes for data transmission over wireless networks, and characterized their performance using simulations and actual experiments over the Verizon Wireless 1xRTT and EVDO CDMA data networks.
+
+This work implicitly provides a general framework for flow control. In this framework, both users' rates and the number of connections they open are properly controlled to pursue equilibrium in the network. We show it is sufficient to control users' rates and their number of connections independently in two separate timescales, in order to guarantee convergence to the desired equilibrium. This two-timescale approach allows modification of the control law in one timescale without affecting the one in the other timescale, or the system's convergence. This framework is general in the sense that its usage is not limited to the problem we study in this thesis, which serves as an ideal platform to demonstrate the power of this approach.
+
+== Publications
+
+- M. Chen, A. Abate, S. Sastry, "New Congestion Control Schemes
+over Wireless Networks: Stability Analysis", Proceedings of the
+16th IFAC World Congress, Prague, 2005.
+\[[../papers/IFAC.05.stability.pdf PDF]\] (tech. report is
+[http://www.eecs.berkeley.edu/Pubs/TechRpts/2005/4312.html
+here].)
+
+- A. Abate, M. Chen, S. Sastry, "New Congestion Control Schemes
+over Wireless Networks: Delay Sensitivity Analysis and
+Simulations", Proceedings of the 16th IFAC World Congress,
+Prague, 2005. \[[../papers/IFAC.05.delay.pdf PDF]\] (tech.
+report is
+[http://www.eecs.berkeley.edu/Pubs/TechRpts/2005/4312.html
+here].)
+
+- M. Chen and A. Zakhor, "Flow Control over Wireless Network and
+Application Layer Implementation", Proceeding of Infocom 2006,
+Barcelona, Spain, April, 2006.
+\[[../papers/infocom2006.final.pdf PDF]\]
+
+- "A General Framework for Flow Control in Wireless Networks",
+PhD Dissertation, U.C. Berkeley, 2006.
+\[[../papers/phd.thesis.pdf PDF]\] \n \red Eli Jury Award, EECS Department, U.C.
+Berkeley, 2007.\red

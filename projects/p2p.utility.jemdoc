@@ -1,0 +1,65 @@
+# jemdoc: menu{MENU_sublevel}{}
+# jemdoc: addcss{../perweb.css}
+= Utility Maximization in Peer-to-Peer Systems
+Joint work with Miroslav Ponec from Polytechnic University,  and Sudipta Sengupta, Jin Li, and Philip A. Chou from Microsoft Research Redmond.
+
+Peer-to-Peer (P2P) applications have witnessed unprecedented
+growth on the Internet and are increasingly being used for
+real-time applications like video conferencing and live
+streaming. However, the design of the majority of P2P systems
+does not strive to achieve any systematic optimization of the
+total value to all peers under a resource sharing constraint.
+This may well be the next step in improving the performance of
+P2P systems.
+
+In this project, we study the problem of utility maximization
+over P2P topology, in which aggregate application-specific
+utilities are maximized by running distributed algorithms on P2P
+nodes that are constrained by their uplink capacities. This may
+be understood as extending Kelly's seminal framework from
+single-path unicast over general topology to multi-path
+multicast over P2P topology, with network coding allowed.
+
+For single-rate multicast over certain classes of popular P2P
+topologies, we show that routing along a linear number of trees
+per source can achieve the largest rate region that can be
+possibly obtained by (inter-session) network coding. Similarly,
+for multi-rate multicast, routing along a quadratic number of
+trees per source is sufficient to achieve the largest rate
+region attained by (intra-session) network coding.
+
+This simplification result allows us to develop a new multi-tree
+routing formulation for the problem. This new tree-rate based
+formulation is unique in the sense that it not only eliminates
+some mathematical difficulties associated with link-rate or
+path-rate based formulations, but also leads to easy
+implementation. Despite of the negative results in literature on
+applying Primal-dual algorithms to maximize utility under
+multi-path settings, we have been able to develop a Primal-dual
+distributed algorithm to maximize the aggregate utility under
+the multi-path routing environments. We first characterize the
+convergence behavior of the Primal-dual algorithm under
+multi-path settings, and then utilize our proposed sufficient
+condition to show its global exponential convergence to the
+optimal solution under different P2P communication scenarios we
+study. The primal-dual algorithm can be implemented by utilizing
+only end-to-end delay measurements between P2P nodes; hence, it
+can be readily deployed on today's Internet. To support this
+claim, we have implemented the Primal-dual algorithm for use in
+a peer-assisted multi-party conferencing system and evaluated
+its performance through actual experiments on a LAN testbed and
+the Internet.
+
+== Publications
+
+    - M. Chen, M. Ponec, S. Sengupta, J. Li, and P. A. Chou, "Utility Maximization in Peer-to-Peer Systems", accepted for publication in IEEE/ACM Trans. on Networking. \[ final version to be available \] (A conference version appears in ACM SIGMETRICS 2008 \[[../papers/p2p.utility.sigmatrics.08.pdf PDF]\])
+
+	- M. Ponec, S. Sengupta, M. Chen, J. Li, and P. A. Chou, "Optimizing Multi-rate Peer-to-Peer Video Conferencing Applications", IEEE Trans. on Multimedia, special issue on Iterative Multimedia, Oct. 2011. \[[../papers/p2p.conf.multirate.TMM.pdf PDF]\] (A conference version appears in IEEE ICME 2009 as a plenary paper and receives the \red Best Paper Award\red. \[[../papers/p2p.conf.multirate.icme.pdf PDF]\])
+
+	- S. Sengupta, M. Chen, P. A. Chou, and J. Li, "On
+Optimality of Routing for Multi-source Multicast Communication
+Scenarios with Node Uplink Constraints", Proceeding of 2008 IEEE
+International Symposium on Information Theory (ISIT 2008),
+Toronto, Ontario, Canada, July 6-11, 2008.
+\[[../papers/p2p.isit.08.pdf PDF]\]
+

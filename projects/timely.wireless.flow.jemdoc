@@ -1,0 +1,37 @@
+# jemdoc: menu{MENU_sublevel}{}
+# jemdoc: addcss{../perweb.css}
+= Fundamental of Timely Wireless Flows with General Traffic Patterns
+Joint work with Lei Deng from The Chinese University of Hong Kong and Chih-Chun Wang and Shizhen Zhao from Purdue University
+
+Most existing wireless networking solutions are best effort
+and do not provide any delay guarantee required by
+important applications such as multimedia communication, real-time control of cyber-physical systems, and traffic of many IoT applications. 
+Recently, Hou and Kumar \[2\]–\[6\] provided a novel framework for analyzing
+and designing delay-guaranteed wireless networking solutions.
+While inspiring, their idle-time-based analysis applies only to
+flows with a special traffic pattern called the frame-synchronized
+setting. The problem remains largely open for general traffic
+patterns. This paper addresses this challenge by proposing a
+general framework that characterizes and achieves the complete
+delay-constrained capacity region with general traffic patterns in
+single-hop downlink access-point wireless networks.We first show
+that the timely wireless flow problem is fundamentally an infinitehorizon
+Markov Decision Process (MDP). Then we judiciously
+combine different simplification methods to prove that the timely
+capacity region can be characterized by a finite-size convex
+polygon. This for the first time allows us to characterize the timely
+capacity region of wireless flows with general traffic patterns. We
+then design three scheduling policies to optimize network utility
+and/or support feasible timely throughput vectors for general
+traffic patterns. The first policy achieves the optimal network
+utility and supports any feasible timely throughput vector but
+suffers from the curse of dimensionality. The second and third
+policies are inspired by our MDP framework and are of much
+lower complexity. Simulation results show that both achieve nearoptimal
+performance and outperform other existing alternatives.
+
+== Publications
+
+    - L. Deng, C. Wang, M. Chen, and S. Zhao, “Timely Wireless Flows with General Traffic Patterns: 
+    Capacity Region and Scheduling Algorithms”, accepted for publication in IEEE/ACM Transactions on Networking.  
+    \[[../papers/timely.wireless.flow.ToN.17.pdf PDF]\] (A conference version appears in the Proceedings of IEEE INFOCOM 2016.)

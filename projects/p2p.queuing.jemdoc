@@ -1,0 +1,36 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Queuing Models for Peer-to-peer Systems 
+Joint work with Taoyu 
+Li and Maoke Chen from Tsinghua University, and Dah-ming Chiu 
+from The Chinese University of Hong Kong. 
+
+Recent development of peer-to-peer (P2P) services (e.g. 
+streaming, file sharing, and storage) systems introduces a new 
+type of queue systems that are rarely studied before. In these 
+new systems, both customer and server arrive and depart 
+randomly. The server dynamics may or may not correlate to the 
+customer dynamics. Motivated by these observations, we develop 
+queuing models for P2P service systems and a taxonomy for 
+different variations of these queueing models. For several 
+basic classes of these systems, we show that they are stable, 
+i.e., all arriving customer will be served and cleared in finite 
+time, if the average workload does not exceed the average 
+system service capacity. Numerical experiments verify our 
+results, and indicate that higher server dynamics lead to less 
+time a customer spends in the system on average. 
+
+These new models open the door for performance characterization 
+for networked service systems under dynamics. 
+
+
+
+== Publications 
+
+	- T. Li, Minghua Chen, D. Chiu, and M. Chen, "Queuing 
+Models for Peer-to-peer Systems", Proceedings of the 8th 
+International Workshop on Peer-to-Peer Systems (IPTPS 2009), 
+Boston, MA, USA, April 21, 2009. 
+\[[../papers/p2p.qmodel.iptps.09.pdf PDF]\]
+
+

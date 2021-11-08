@@ -1,0 +1,44 @@
+# jemdoc: menu{MENU_sublevel}{}
+# jemdoc: addcss{../perweb.css} 
+= Enable Multilevel Trust in Privacy Preserving Data Mining
+Joint work with Yaping Li from UC Berkeley, Qiwei Li, Wei Zhang, Xiaokui Xiao, and Yufei Tao from The Chinese University of Hong Kong.
+
+Privacy Preserving Data Mining (PPDM) addresses the problem of
+developing accurate models about aggregated data without access to
+precise information in individual data record. A widely studied
+perturbation-based PPDM approach introduces random
+perturbation to individual values to preserve privacy before data is
+published. Previous solutions of this approach are limited in their
+tacit assumption of a single-level trust on data miners.
+
+In this work, we relax this assumption and expand the scope of
+perturbation-based PPDM to Multi-Level Trust (MLT-PPDM). In our
+problem setting, the more trusted a data miner is, the less
+perturbed copy of the data it receives.
+The key challenge lies in preventing malicious data miners at different trust
+levels from jointly inferring additional information about the original data
+that is not allowed by the data owner. We address this
+challenge by properly correlating perturbation <i>across</i> different
+trust levels in a non-trivial fashion. We prove that our solution is robust against colluding attacks with
+respect to our privacy goal. That is, even when attackers collude arbitrarily, our solution prevents
+them from reconstructing the original data more accurately than the
+best effort by any individual attacker. One salient
+feature of our solution is that it allows a data owner to generate
+perturbed copies of its data for arbitrary trust levels
+on-demand. This feature offers data owners maximum flexibility.
+
+This series of work are initiated from our early technical report from EECS Department University of California, Berkeley Tech. Report No. UCB/EECS-2008-156, December 13, 2008. \[[http://www.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-156.html PDF]\]
+
+Our initial investigation was based on Gaussian perturbations. 
+Dr. Xiao Xiaokui extended the study to the setting of uniform 
+perturbations. One advantage of using uniform perturbation for 
+multi-level perturbation is that the corresponding perturbation 
+algorithm has near-optimal storage and complexity performance. 
+
+== Publication
+
+
+    - Y. Li, M. Chen, Q. Li, and W. Zhang, "Enabling Multi-level Trust in Privacy Preserving Data Mining", accepted for publication in IEEE Trans. on Knowledge and Data Engineering. \[ final version to be available \] Early technical report version is [http://www.eecs.berkeley.edu/Pubs/TechRpts/2008/EECS-2008-156.html here]. Final long archived version is [http://http://arxiv.org/abs/1104.0459 here]. 
+
+    - X. Xiao, Y. Tao, and M. Chen, "Optimal Random Perturbation at Multiple Privacy Levels", Proceedings of the 35th International Conference on Very Large Data Bases (VLDB 2009),
+Lyon, France, Aug. 24-28, 2009. \[ final version to be available \]

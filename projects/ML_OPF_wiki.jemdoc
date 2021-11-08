@@ -1,0 +1,128 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Machine Learning For Solving Optimal Power Flow Problems
+
+
+~~~ {}
+
+This page contains a list of the papers about recent works on applying machine learning for solving optimal power flow, organized in sections by the algorithmic structure.
+
+This page will be updated periodically.
+
+For any queries and comments, please contact [px018@ie.cuhk.edu.hk Xiang Pan] and [minghua.chen@cityu.edu.hk Minghua Chen].
+~~~
+
+== Survey and overview paper
+    . P. L. Donti and J. Z. Kolter, "Machine Learning for Sustainable Energy Systems", in Annual Review of Environment and Resources 2021 vol: 46, 2021.
+	. M. Massaoudi, H. Abu-Rub, S. S. Refaat, I. Chihi and F. S. Oueslati, "Deep Learning in Smart Grid Technology: A Review of Recent Advancements and Future Prospects," in IEEE Access, vol. 9, pp. 54558-54578, Apr. 2021.
+    . J. Kotary, F. Fioretto and P. V. Hentenryck, "End-to-End Constrained Optimization Learning: A Survey", arXiv preprint arXiv:2103.16378, 2021.
+    . G. Ruan, H. Zhong, G. Zhang, Y. He, X. Wang and T. Pu, "Review of Learning-Assisted Power System Optimization", in CSEE Journal of Power and Energy Systems, vol. 7, no. 2, pp. 221-231, Mar. 2021.
+    . L. Duchesne, E. Karangelos and L. Wehenkel, "Recent Developments in Machine Learning for Energy Systems Reliability Management", in Proceedings of IEEE, vol. 108, no. 9, pp. 1656-1676, Oct. 2020.
+    . F. Hasan, A. Kargarian and A. Mohammadi, "A Survey on Applications of Machine Learning for Optimal Power Flow", in Proceedings of 2020 IEEE Texas Power and Energy Conference (TPEC), College Station, TX, USA, Feb. 6 - 7, 2020.
+   
+
+== The Learning-based End-to-end Framework
+
+
+~~~
+{}{img_left}{image/end2end.jpg}{}{}{200px}{}
+~~~
+
+The idea behine the End-to-end framework is to train the ML model to output solutions directly from the input instance.
+
+
+
+=== Papers
+	. P. Donti, A. Agarwal, N. V. Bedmutha, L. Pileggi and J. Z. Kolter, "Adversarially robust learning for security-constrained optimal power flow," In Proceedings of the 35th Conference on Neural Information Processing Systems, virtual conference, poster paper, Dec. 7 - 10, 2021.
+	. R. Nellikkath, S. Chatzivasileiadis, "Physics-Informed Neural Networks for AC Optimal Power Flow", arXiv preprint arXiv:2110.02672.
+	. T. Falconer and L. Mones, "Leveraging power grid topology in machine learning assisted optimal power flow", arXiv preprint arXiv:2110.00306.	
+	. Y. Zhou, W. J. Lee, R. Diao, and D. Shi, "Deep Reinforcement Learning Based Real-Time AC Optimal Power Flow Considering Uncertainties," accepted for publication in Journal of Modern Power Systems and Clean Energy (early access), 2021.
+	. S. d. Jongh, S. Steinle, A. Hlawatsch, F. Mueller, M. Suriyah and T. Leibfried, "Neural Predictive Control for the Optimization of Smart Grid Flexibility Schedules," In Proceedings of the 56th International Universities Power Engineering Conference (UPEC), Middlesbrough, United Kingdom, Aug. 31 - Sept. 3, 2021.	
+	. Y. Jia and X. Bai, "A CNN Approach for Optimal Power Flow Problem for Distribution Network," In Proceedings of Power System and Green Energy Conference (PSGEC), Shanghai, China, Aug. 20 - 22, 2021.
+	. W. Huang and M. Chen, "DeepOPF-NGT: A Fast Unsupervised Learning Approach for Solving AC-OPF Problems without Ground Truth", In Proceedings of the 38th International Conference on Machine Learning Workshop, virtual conference, Jul. 23, 2021. 
+	. G. Huang, L. Liao, L. Cheng and W. Hua, "Learning Optimal Power Flow with Infeasibility Awareness", In Proceedings of the 38th International Conference on Machine Learning Workshop, virtual conference, Jul. 23, 2021. 
+	. A. Velloso and P. V. Hentenryck, "Combining Deep Learning and Optimization for Preventive Security-Constrained DC Optimal Power Flow", in IEEE Transactions on Power Systems, vol. 36, no. 4, pp. 3618 - 3628, Jul, 2021.
+	. R. Nellikkath and S. Chatzivasileiadis, "Physics-Informed Neural Networks for Minimising Worst-Case Violations in DC Optimal Power Flow", arXiv preprint arXiv:2107.00465, 2021.
+    . S. Liu, C. Wu and H. Zhu, "Graph Neural Networks for Learning Real-Time Prices in Electricity Market", arXiv preprint arXiv:2106.10529, 2021.
+	. J. Kotary, F. Fioretto and P. V. Hentenryck, "Learning Hard Optimization Problems: A Data Generation Perspective", arXiv preprint arXiv:2106.02601.	
+	. R. Sadnan and A. Dubey, "Learning Optimal Power Flow Solutions using Linearized Models in Power Distribution Systems", In Proceedings of IEEE 48th Photovoltaic Specialists Conference (PVSC), Fort Lauderdale, FL, USA, Jun. 20 - 25, 2021.
+	. X. Pan, T. Zhao, M. Chen and S. Zhang, "DeepOPF: A Deep Neural Network Approach for Security-Constrained DC Optimal Power Flow", in IEEE Transactions on Power Systems, vol. 36, no. 3, pp. 1725 - 1735, May. 2021. 
+    . P. L. Donti, D. Rolnick and J. Z. Kolter, "DC3: a learning method for optimization with hard constraints", in Proceedings of  9th International Conference on Learning Representations (ICLR), virtual conference, May 3 – 7, 2021.
+	. S. Gupta, V. Kekatos and M. Jin, "Controlling Smart Inverters using Proxies: A Chance-Constrained DNN-based Approach", arXiv preprint arXiv:2105.00429, 2021.	
+	. J. Rahman, C.Feng and J. Zhang, "A learning-augmented approach for AC optimal power flow", accept for publication in International Journal of Electrical Power & Energy Systems, vol. 130, pp. 106908, Mar. (Publication time Sept) 2021.	
+	. M. K. Singh, S. Gupta and V. Kekatos, "Machine Learning for Optimal Inverter Operation in Distribution Grids", in Proceedings of the 55th Annual Conference on Information Sciences and Systems (CISS), Baltimore, MD, USA, Mar. 24 - 26, 2021.
+	. M. K. Singh, V. Kekatos. Chen, and G. B. Giannakis, "Learning to Solve the AC-OPF using Sensitivity-Informed Deep Neural Networks", arXiv preprint arXiv:2103.14779, 2021.
+	. W. Huang,  X. Pan, M. Chen and S. H. Low, "DeepOPF-V: Solving AC-OPF Problems Efficiently", accepted for publication in IEEE Transactions on Power Systems (early access), 2021. Also available on as technical report: arXiv preprint arXiv:2103.11793, 2021. 
+	. M. Chatzos, T. W. Mak and P. V. Hentenryck, "Spatial Network Decomposition for Fast and Scalable AC-OPF Learning", arXiv preprint arXiv:2101.06768, 2021.
+	. T. W. Mak, F. Fioretto and P. V. Hentenryck, "Load Embeddings for Scalable AC-OPF Learning", arXiv preprint arXiv:2101.03973, 2021.
+	. X. Lei, Z. Yang, J. Yu, J. Zhao, Q. Gao and H. Yu, "Data-Driven Optimal Power Flow: A Physics-Informed Machine Learning Approach," in IEEE Transactions on Power Systems, vol. 36, no. 1, pp. 346 - 354, Jan. 2021.
+    . P. Pareek and H.D. Nguyen, "Gaussian Process Learning-based Probabilistic Optimal Power Flow", in IEEE Transactions on Power Systems, vol. 36, no. 1, pp. 541 - 544, Jan. 2021.   
+	. M. Giuntoli, V. Biagini and M. Chioua, "Artificial intelligence and optimization: a way to speed up the security constraint optimal power flow", in Automatisierungstechnik, vol. 68, issue 12, pp. 1035 - 1043, 2020.
+	. Y. Chen, S. Lakshminarayana, C. Maple and H. V. Poor, "A Meta-Learning Approach to the Optimal Power Flow Problem Under Topology Reconfigurations", arXiv preprint arXiv:2012.11524, 2020.
+	. K. Baker K, "Emulating AC OPF solvers for Obtaining Sub-second Feasible, Near-Optimal Solutions", arXiv preprint arXiv:2012.10031, 2020.
+	. H. Lange, B. Chen, M. Berges, and S. Kar, "Learning to Solve AC Optimal Power Flow by Differentiating through Holomorphic Embeddings", arXiv preprint arXiv:2012.09622, 2020.	
+	. T. Zhao, X. Pan, M. Chen, A. Venzke, and S. H. Low, "DeepOPF+: A Deep Neural Network Approach for DC Optimal Power Flow for Ensuring Feasibility", in Proceedings of the 11th IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (IEEE SmartGridComm 2020), virtual conference, Nov. 11 - 13, 2020.	
+    . A. Zamzam and K. Baker, "Learning Optimal Solutions for Extremely Fast AC Optimal Power Flow", in Proceedings of the 11th IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (IEEE SmartGridComm 2020), virtual conference, Nov. 11 - 13, 2020. 
+    . A. Venzke, G. Qu, S. Low and S. Chatzivasileiadis, "Learning Optimal Power Flow: Worst-Case Guarantees for Neural Networks", in Proceedings of the 11th IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (IEEE SmartGridComm 2020), virtual conference, Nov. 11 - 13, 2020. 
+    . M. K. Singh, S. Gupta , V. Kekatos, G. Cavraro and A. Bernstein, "Learning to Optimize Power Distribution Grids using Sensitivity-Informed Deep Neural Networks", in Proceedings of the 11th IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (IEEE SmartGridComm 2020), virtual conference, Nov. 11 - 13, 2020.
+	. S. Gupta , V. Kekatos and M. Jin, "Deep Learning for Reactive Power Control of Smart Inverters under Communication Constraints", in Proceedings of the 11th IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (IEEE SmartGridComm 2020), virtual conference, Nov. 11 - 13, 2020.
+    . L. Duchesne, E. Karangelos, A. Sutera and L. Wehenkel, "Machine Learning for Ranking Day-ahead Decisions in the Context of Short-term Operation Planning", Electric Power Systems Research,189: 106548, Dec. 2020.
+	. J. Rahman, C. Feng and J. Zhang, "Machine Learning-Aided Security Constrained Optimal Power Flow", in Proceedings of 2020 IEEE Power \& Energy Society General Meeting, Montreal, Canada, Aug. 2 - 6, 2020.
+    . X. Pan, M. Chen, T. Zhao and S. H. Low, "DeepOPF: A Feasibility-Optimized Deep Neural Network Approach for AC Optimal Power Flow Problems", arXiv preprint arXiv:2007.01002, 2020. 
+    . M. Chatzos, F. Fioretto, T. W.K. Mak and P. V. Hentenryck, "High-Fidelity Machine Learning Approximations of Large-Scale Optimal Power Flow", arXiv preprint arXiv:2006.1635, 2020.
+	. M. Jalali, V. Kekatos, N. Gatsis and D. Deka, "Designing Reactive Power Control Rules for Smart Inverters Using Support Vector Machines", IEEE Transactions on Smart Grid, vol. 11, no. 2, pp. 1759 - 1770, Mar. 2020. 
+    . R. Dobbe, O. Sondermeijer, D. Fridovich-Keil, D. Arnold, D. Callaway and C. Tomlin, "Towards Distributed Energy Services: Decentralizing Optimal Power Flow with Machine Learning," in IEEE Transactions on Smart Grid, vol. 11, no. 2, pp. 1296 - 1306, Mar. 2020.
+    . F. Fioretto, T. Mak and P. V. Hentenryck, "Predicting AC Optimal Power Flows: Combining Deep Learning and Lagrangian Dual Methods", in Proceedings of the 34th AAAI Conference on Artificial Intelligence, New York, USA, Feb. 7 - 12, 2020. 
+	. F. Fioretto, P. V. Hentenryck, T. W. Mak, C. Tran, F. Baldo and M. Lombardi, "Lagrangian Duality for Constrained Deep Learning", arXiv preprint arXiv:2001.09394, 2020.
+	. O. Sondermeijer, R. Dobbe, D. Arnold, C. Tomlin and T. Keviczky, "Regression-based inverter control for decentralized optimal power flow and voltage regulation", arXiv preprint arXiv:1902.08594, 2019.
+    . D. Owerko, F. Gama and A. Ribeiro, "Optimal Power Flow Using Graph Neural Networks", in Proceedings of the 45th International Conference on Acoustics, Speech and Signal Processing (ICASSP), Barcelona, Spain, May 4 - 8, 2020. 
+    . S. Karagiannopoulos, P. Aristidou and G. Hug, "Data-driven Local Control Design for Active Distribution Grids using off-line Optimal Power Flow and Machine Learning Techniques", in IEEE Transactions on Smart Grid, vol. 10, no. 6, pp. 6461 - 6471, Nov. 2019.
+    . X. Pan, T. Zhao and M. Chen, "DeepOPF: Deep Neural Network for DC Optimal Power Flow", in Proceedings of the 10th IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (IEEE SmartGridComm 2019), Beijing, China, Oct. 21 - 24, 2019. 
+    . G. Neel, Z. Wang and A. Majumdar, "Machine Learning for AC Optimal Power Flow", In Proceedings of the 36th International Conference on Machine Learning Workshop, Long Beach, CA, USA, Jun. 10 - 15, 2019. 
+    . X. Pan, T. Zhao and M. Chen, "DeepOPF: Deep Neural Network for DC Optimal Power Flow",  arXiv:1905.04479, May 11th, 2019.     
+	. Y. Sun, X. Fan, Q. Huang, X. Li, R. Huang, T. Yin and G. Lin, "Local feature sufficiency exploration for predicting security-constrained generation dispatch in multi-area power systems", in Proceedings of the 17th IEEE International Conference on Machine Learning and Applications (ICMLA). Orlando, FL, USA, Dec. 17 - 20, 2018.
+	. A. Garg, M. Jalali, V. Kekatos and N. Gatsis, "Kernel-based learning for smart inverter control", in Proceedings of the 6th IEEE Global Conference on Signal and Information Processing (GlobalSIP), Anaheim, CA, Nov. 26 - 29, 2018.
+    . L. Halilbašić, F. Thams, A. Venzke, S. Chatzivasileiadis and P. Pinson, "Data-driven Security-Constrained AC-OPF for Operations and Markets", in Proceedings of the 20th IEEE Power Systems Computation Conference, Dublin, Ireland, Jun. 11 - 15, 2018.
+    . E. R. Sanseverino, M. L. Di Silvestre, L. Mineo, S. Favuzza, N. Q. Nguyen and Q. T. Tran, "A multi-agent system reinforcement learning based optimal power flow for islanded microgrids", in Proceedings of IEEE 16th International Conference on Environment and Electrical Engineering (EEEIC), Florence, Italy, Jun. 7 - 10, 2016.
+    
+== The Hybrid Framework
+
+~~~
+{}{img_left}{image/assist.jpg}{}{}{280px}{}
+~~~
+
+In the hybrid framework, the machine learning model is used to augment the conventional optimization solver with valuable pieces of information.
+
+
+=== Papers
+	. L. Zhang and B. Zhang, "Learning to Solve the AC Optimal Power Flow via a Lagrangian Approach", arXiv preprint arXiv:2110.01653.
+	. G. Chen, H. Zhang, H. Hui, N. Dai and Y. Song, "Scheduling thermostatically controlled loads to provide regulation capacity based on a learning-based optimal power flow model," in IEEE Transactions on Sustainable Energy, vol. 12, no. 4, pp. 2459 - 2470, Oct. 2021.  
+	. Q. Hou, N. Zhang, D. S. Kirschen, E. Du, Y. Cheng and C. Kang, "Sparse Oblique Decision Tree for Power System Security Rules Extraction and Embedding," in IEEE Transactions on Power Systems, vol. 36, no. 2, pp. 1605 - 1615, Mar. 2021.
+    . A. Venzke and S. Chatzivasileiadis, "Verification of Neural Network Behaviour: Formal Guarantees for Power System Applications", IEEE Transactions on Smart Grid, vol. 12, no. 1, pp. 383 - 397, Jan. 2021. 
+	. J. H. Woo, L. Wu, J-B. P and J. H. Roh, "Real-Time Optimal Power Flow Using Twin Delayed Deep Deterministic Policy Gradient Algorithm", in IEEE Access, vol. 8, pp. 213611 - 213618, Nov. 2020.
+	. W. Dong, Z. Xie , G. Kestor and L. Dong, "Smart-PGSim: using neural network to accelerate AC-OPF power grid simulation", in Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (SC '20). IEEE Press, Article 63, 1 – 15, Nov. 2020. 	
+	. T. Liu, Y. Liu, J. Liu, J. Wang, L. Xu, G. Qiu and H. Cao, "A Bayesian Learning based Scheme for Online Dynamic Security Assessment and Preventive Control", in IEEE Transactions on Power Systems, vol 35, no. 5, pp. 4088 - 4099, Sep. 2020.	
+    . L. Zhang, Y. Chen and B. Zhang, "A Convex Neural Network Solver for DCOPF with Generalization Guarantees", arXiv preprint arXiv:2009.09109, 2020.
+    . K. Baker, "A Learning-boosted Quasi-Newton Method for AC Optimal Power Flow", arXiv preprint arXiv:2007.06074, 2020.
+    . M. Jamei, L. Mones, A. Robson, L. White, J. Requeima and C. Ududec, "Meta-Optimization of Optimal Power Flow", in Proceedings of the 36th International Conference on Machine Learning Workshop, Long Beach, CA, USA, Jun. 10 - 15, 2019.
+    . Z. Yan and Y. Xu, "Real-Time Optimal Power Flow: A Lagrangian based Deep Reinforcement Learning Approach", in IEEE Transactions on Power Systems, letter paper, vol 35, no. 4, pp. 3270 - 3273, Jul. 2020.
+    . A. Venzke, D. Viola, J. Mermet-Guyennet, G. Misyris and S. Chatzivasileiadis, "Neural Networks for Encoding Dynamic Security-Constrained Optimal Power Flow to Mixed-Integer Linear Programs", arXiv preprint, arXiv:2003.07939, 2020.
+	. L. Chen and J.E. Tate, "Hot-Starting the AC Power Flow with Convolutional Neural Networks", arXiv preprint arXiv:2004.09342, 2020.
+    . Y. Zhou, B. Zhang, C. Xu, T. Lan, R. Diao, D. Shi, Z. Wang and W. Lee, "Deriving Fast AC OPF Solutions via Proximal Policy Optimization for Secure and Economic Grid Operation", arXiv preprint arXiv:2003.12584, 2020. 		
+    . Y. Chen and B. Zhang, "Learning to Solve Network Flow Problems via Neural Decoding", arXiv preprint arXiv:2002.04091, 2020.
+    . K. Baker and A. Bernstein, "Joint Chance Constraints in AC Optimal Power Flow: Improving Bounds through Learning", in IEEE Transactions on Smart Grid, vol. 10, no. 6, pp. 6376 - 6385, Nov. 2019.
+    . F. Diehl, "Warm-Starting AC Optimal Power Flow with Graph Neural Networks", in Proceedings of the 33rd Conference on Neural Information Processing Systems (NeurIPS) Workshop, Vancouver, BC, Canada, Dec. 8 - 14, 2019.
+	. A. Robson, M. Jamei, C. Ududec and L. Mones, "Learning an Optimally Reduced Formulation of OPF through Meta-optimization", arXiv preprint arXiv:1911.06784, 2019.
+    . D. Biagioni, P. Graf, X. Zhang, A.S. Zamzam, K. Baker and J. King, "Learning-Accelerated ADMM for Distributed Optimal Power Flow", arXiv preprint arXiv:1911.03019, 2019.
+    . K. Baker, "Learning Warm-Start Points for AC Optimal Power Flow", in Proceedings of IEEE 29th Machine Learning for Signal Processing Conference, Pittsburgh, PA, USA, Oct. 13 - 16, 2019. 
+    . D. Deka and S. Misra, "Learning for DC-OPF: Classifying Active Sets Using Neural Nets", Milan, Italy, Jun. 23 - 27, IEEE Milan PowerTech, 2019. 
+	. K. Baker and A. Bernstein. Joint chance constraints reduction through learning in active distribution networks", in Proceedings of the 6th IEEE Global Conference on Signal and Information Processing (GlobalSIP), Anaheim, CA, Nov. 26 - 29, 2018.
+	. A. Jahanbani Ardakani and F. Bouffard, "Prediction of umbrella constraints", in Proceedings of IEEE 20th Power Systems Computation Conference, Dublin, Ireland, Jun. 11 - 15, 2018.
+	. P. Aristidou and G. Hug, "Optimized local control for active distribution grids using machine learning techniques", in Proceedings of 2018 IEEE Power & Energy Society General Meeting (PESGM). Portland, OR, USA, Aug. 5 - 10, 2018.	
+    . Y. Ng, S. Misra, L. A. Roald and S. Backhaus, "Statistical Learning for DC Optimal Power Flow", in Proceedings of the 20th IEEE Power Systems Computation Conference, Dublin, Ireland, Jun. 11 - 15, 2018. 
+    . S. Misra, L. A. Roald and Y. Ng, "Learning for Constrained Optimization: Identifying Optimal Active Constraint Sets", arXiv preprint arXiv:1802.09639, 2018.
+    . A. Vaccaro and C. A. Cañizares, "A Knowledge-Based Framework for Power Flow and Optimal Power Flow Analyses", in IEEE Transactions on Smart Grid, vol. 9, no. 1, pp. 230 - 239, Jan. 2018.
+	. F. Thams, S. Chatzivasileiadis, P. Pinson and R. Eriksson, "Data-driven security-constrained OPF", in Proceedings of the 10th Bulk Power Systems Dynamics and Control Symposium, Espinho, Portugal, Aug. 27 - Sep. 1, 2017.
+    . R. Canyasse, G. Dalal and S. Mannor, "Supervised learning for optimal power flow as a real-time proxy", in Proceedings of IEEE Power & Energy Society Innovative Smart Grid Technologies Conference (ISGT), Washington, DC, USA, Apr. 23 - 26, 2017.
+	. R. T. F. Ah.  King, X. Tu,  Louis-A. Dessaint and I Kamwa, "Multi-contingency transient stability-constrained optimal power flow using multilayer feedforward neural networks", in Proceedings pf 2016 IEEE Canadian Conference on Electrical and Computer Engineering (CCECE), Vancouver, BC, Canada, May 15 - 18, 2016.	
+    . V. J. Gutierrez-Martinez, C. A. Canizares, C. R. Fuerte-Esquivel, A. Pizano-Martinez and X. Gu, "Neural-Network Security-Boundary Constrained Optimal Power Flow", in IEEE Transactions on Power Systems, vol. 26, no. 1, pp. 63 - 72, Feb. 2011.

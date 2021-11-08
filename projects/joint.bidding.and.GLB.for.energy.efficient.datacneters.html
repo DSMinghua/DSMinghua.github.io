@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<link rel="stylesheet" href="jemdoc.css" type="text/css" />
+<link rel="stylesheet" href="../perweb.css" type="text/css" />
+<title>Joint Market Bidding and Geographical Load Balancing for Energy-Efficient Datacenters</title>
+</head>
+<body>
+<table summary="Table for page layout." id="tlayout">
+<tr valign="top">
+<td id="layout-menu">
+<div class="menu-category">Minghua Chen</div>
+<div class="menu-item"><a href="../index.html">Home</a></div>
+<div class="menu-item"><a href="../teaching.html">Teaching</a></div>
+<div class="menu-item"><a href="../bio.html">Biography</a></div>
+<div class="menu-category">Research</div>
+<div class="menu-item"><a href="../projects.html">Projects</a></div>
+<div class="menu-item"><a href="../publications.html">Publications</a></div>
+<div class="menu-item"><a href="../team.html">Team</a></div>
+<div class="menu-item"><a href="../advice.html">To&nbsp;Students</a></div>
+</td>
+<td id="layout-content">
+<div id="toptitle">
+<h1>Joint Market Bidding and Geographical Load Balancing for Energy-Efficient Datacenters</h1>
+<div id="subtitle">Joint work with Ying Zhang, Lei Deng from The Chinese University of Hong Kong, Peijian Wang from Xi&rsquo;An Jiaotong University, Jose Camacho from Universidad Carlos III de Madrid, and Xue Liu from McGill University</div>
+</div>
+<p>The flourishing Internet-scale cloud services are revolutionizing the landscape
+of human activity. The rapid growth of such services has triggered
+an increasing deployment of massive energy-hungry geo-distributed datacenters
+worldwide. In this thesis, we consider the scenario where a cloud
+service provider (CSP) operates multiple geo-distributed datacenters to
+provide Internet-scale service. Our objective is to minimize the total electricity
+cost and bandwidth cost by dynamically routing workloads to datacenters
+with cheaper electricity, i.e., geographic load balancing (GLB).</p>
+<p>Most existing studies on GLB assume that the use of GLB has no impact
+on electricity prices, even though GLB increases local electricity demand
+variation. In practice, however, electricity retail prices are determined by
+how supply and demand are dynamically balanced by local electricity utilities.
+Firstly, in order to understand GLS’s economic potential and impact,
+we carry out a comprehensive study on how GLB interacts with electricity
+supply chains. In particular, we show that a separate GLB solution, which
+relies on utility companies for electricity procurement (EP), will make the
+electricity supply chains less efficient. Then, utility companies have to
+increase electricity retail prices to ensure certain profit margin. Consequently,
+CSP doing GLB may end up getting minor cost reduction or even
+paying higher electricity cost than not doing GLB, as shown in our case
+study based on real-world traces.</p>
+<p>Secondly, motivated by the recent practice of large CSPs moving into
+electricity markets, we allow CSPs to join the deregulated market directly
+and propose a joint GLB and EP solution. By considering the real-world
+market mechanisms and exploring the full design space of strategic bidding, we formulate a stochastic optimization problem to minimize the total cost
+expectation. Under the ideal setting where exact values of market prices
+and workloads are given, this problem reduces to a simple linear programming
+and is easy to solve. However, under the realistic setting where only
+distributional information of these variables is available when making decisions,
+the problem unfolds into a non-convex infinite-dimensional one
+and is challenging. One of our main contributions is to develop a nestedloop
+algorithm that is proven to solve the challenging problem optimally.
+Our study also highlights the intriguing role of uncertainty in demands
+and prices, measured by their variances. While uncertainty in electricity
+demands deteriorates the cost-saving performance of joint GLB and EP,
+counter-intuitively, uncertainty in market prices can be exploited to achieve
+a cost reduction even larger than the setting without price uncertainty.</p>
+<p>Finally, our trace-driven evaluations corroborate our theoretical results,
+demonstrate fast convergence of our algorithm, and show that it can reduce
+the cost for the CSP by up to 20% as compared to baseline alternatives.</p>
+<p>This work demonstrates the necessity and benefit of the joint optimization
+framework when performing GLB. Results from this study provide
+guidelines for the CSP to cut its electricity bills by taking
+advantage of its presence in multiple deregulated markets, by exploring a second-chance opporutnity uniquely available to CSP.</p>
+<h2>Publications</h2>
+<ol>
+<li><p>Y. Zhang, L. Deng, M. Chen, and P. Wang, &ldquo;Joint Bidding and Geographical Load Balancing for Datacenters: Is Uncertainty a Blessing or a Curse?&rdquo;, in Proceedings of IEEE INFOCOM, Atlanta, GA, USA, May 1-4, 2017. [<a href="../papers/Joint.bidding.GLB.INFOCOM.17.pdf">PDF</a>]</p>
+</li>
+<li><p>P. Wang, Y. Zhang, L. Deng, M. Chen, and X. Liu, &ldquo;Second Chance Works Out Better: Saving More for Data Center Operator in Open Energy Market&rdquo;, (invited), in Proceedings of the 50th Annual Conference on Information Sciences and Systems (CISS), Princeton, NJ, US, March 16 - 18, 2016. [<a href="../papers/scecond_chance.ciss.16.pdf">PDF</a>]</p>
+</li>
+<li><p>J. Camacho, Y. Zhang, M. Chen, and D. Chiu, &ldquo;Balance your Bids before your Bits: The Economics of Geographic Load-Balancing&rdquo;, in Proceedings of the fifth International Conference on Future Energy Systems (ACM e-Energy), Cambridge, UK, June 11-13, 2014. [<a href="../papers/GLB.e-Energy.14.pdf">PDF</a>]</p>
+</li>
+</ol>
+<div id="footer">
+<div id="footer-text">
+Page generated 10/2021, by a modified version of <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+</div>
+</div>
+</td>
+</tr>
+</table>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-112827-1";
+urchinTracker();
+</script>
+</body>
+</html>

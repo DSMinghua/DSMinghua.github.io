@@ -1,0 +1,63 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Device-to-Device Load Balancing for Cellular Networks
+Joint work with Lei Deng, Ying Zhang, Jack Lee, and Angela Zhang from The Chinese University of Hong Kong, Yinghui He from Zhejiang University, Zongpeng Li from Wuhan University, and Lingyang Song from Peking University. 
+
+In the U.S., heavy-duty trucks haul more than 70\% of all freight tonnage, and they consume 17.6\% of energy in transportation sector (including 
+trucks, airplanes, pipelines, and railways) and contribute to around 5\% of the greenhouse gas emission. Fuel cost is the largest operating cost (34\%) 
+of truck owners/operators, and reducing fuel consumption is critical for cost-effective and environment-friendly heavy-duty truck operations.
+
+We recently developed two principled solutions to significantly improve the energy efficiency of heavy-duty truck operation, by reducing the fuel consumption of idling and timely transportation. In our first work, we consider
+the problem of idling reduction under the uncertainty of vehicle
+stop time. We abstract it as a classic ski rental problem, and
+propose a constrained version with two statistics µB- and qB+ , the
+expected length of short stops and the probability of long stops.
+We develop online algorithms that combine the best of the wellknown
+deterministic and randomized schemes to minimize the
+worst case competitive ratio. We demonstrate the robustness of
+the algorithms in terms of both worst case guarantee and average
+case performance using simulation and real-world driving data.
+
+In the second work, we consider a timely transportation problem where a heavyduty
+truck travels between two locations across the national
+highway system, subject to a hard deadline constraint.
+Our objective is to minimize the total fuel consumption
+of the truck, by optimizing both route planning and
+speed planning. The problem is important for cost-effective
+and environment-friendly truck operation, and it is uniquely
+challenging due to its combinatorial nature as well as the
+need of considering hard deadline constraint. We first show
+that the problem is NP-Complete; thus exact solution is
+computational prohibited unless P=NP. We then design a
+fully polynomial time approximation scheme (FPTAS) that
+attains an approximation ratio of 1\+ \\epsilon with a network-size
+induced complexity of O(mn^2/\\epsilon^2), where m and n are the
+numbers of nodes and edges, respectively. While achieving
+highly-preferred theoretical performance guarantee, the proposed
+FPTAS still suffers from long running time when applying
+to national-wide highway systems with tens of thousands
+of nodes and edges. Leveraging elegant insights from
+studying the dual of the original problem, we design a fast
+heuristic solution with O(m\+ n log n) complexity. The proposed
+heuristic allows us to tackle the energy-efficient timely
+transportation problem on large-scale national highway systems.
+We further characterize a condition under which our
+heuristic generates an optimal solution. We observe that
+the condition holds in most of the practical instances in numerical
+experiments, justifying the superior empirical performance
+of our heuristic. We carry out extensive numerical
+experiments using real-world truck data over the actual U.S.
+highway network. The results show that our proposed solutions
+achieve 17\% (resp. 14\%) fuel consumption reduction,
+as compared to a fastest path (resp. shortest path) algorithm
+adapted from common practice. 
+
+We have also recently extended the above single-task solution to the case of multiple geographically-dispersed tasks. 
+
+Overall, we believe that de-carbonizing heavy-duty truck operation is important for the sustainable development of the logistics industry and society. 
+Our works serve as a call for participation.
+
+== Publications
+    - C. Dong, H. Zeng, and M. Chen, "Online Algorithms for Automotive Idling Reduction with Effective Statistics", IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems, Special Section on Automotive Embedded Systems and Software, vol. 34, no. 11, November, 2015. \[[../papers/idling.car.TCAD.15.pdf PDF]\] (Its conference version appeared on IEEE/ACM DAC 2014.)
+    - L. Deng, M. Hajiesmaili, M. Chen, and H. Zeng, "Energy-Efficient Timely Transportation of Long-Haul Heavy-Duty Trucks", IEEE Transactions on Intelligent Transportation Systems. \[[../papers/energy.efficient.trucking.TITS.17.pdf PDF]\] (A conference version appears in ACM e-Energy 2016 as a \red Best Paper Award Candidate.\red)
+    - Q. Liu, H. Zeng, and M. Chen, "Energy-Efficient Timely Truck Transportation for Geographically-Dispersed Tasks", in Proceedings of the ninth International Conference on Future Energy Systems (ACM e-Energy 2018), Karlsruhe, Germany, June, 12-15, 2018. \[[../papers/EETT.multi-tasks.pdf PDF]\] \n \red Best Paper Award Finalist.\red

@@ -1,0 +1,46 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Energy-Efficient Dynamic Provisioning in Data Centers 
+Joint work with Tan Lu from The Chinese University of Hong Kong, Lachlan Andrew from Swinburne University of Technology, and Ramesh K. Sitaraman from University of Massachusetts Amherst
+
+Energy consumption represents a significant cost in data center operation. In 
+2010, data centers world-wide consumed 240 billion kWh electricity (1.3% of 
+the world total), enough to power 5 Hong Kong or roughly the entire Spain. 
+However, real-world statistics reveals that a large fraction of the energy is 
+used to power idle servers when the workload is low. Dynamic provisioning 
+techniques aim at saving this portion of the energy, by turning off 
+unnecessary servers. In dynamic provisioning, it is a common approach to 
+predict future workload to certain extent and exploit the information to 
+achieve good performance. This naturally leads to the following fundamental 
+questions: - Can we design solutions that require zero future workload 
+information, called online solutions, yet still achieve close-to-optimal 
+performance? - Can we characterize the benefit of knowing future workload 
+information in dynamic provisioning? In this work, we seek answers to the 
+above questions. In particular, we develop online dynamic provisioning 
+solutions with and without future workload information available. We first 
+reveal an elegant structure of the off-line dynamic provisioning problem, 
+which allows us to characterize the optimal solution in a 
+"divide-and-conquer" manner. We then exploit this insight to design two 
+online algorithms with competitive ratios 2-alpha and  e/(e-1+alpha) , 
+respectively, where 0<= alpha <=1 is the normalized size of a look-ahead 
+window in which exact workload prediction is available. We prove that these 
+competitive ratios are the best possible for deterministic and randomized 
+algorithms; hence, they characterize the benefit of predicting future 
+workload. A fundamental observation is that future workload information 
+beyond the full-size look-ahead window (corresponding to alpha=1) will not 
+improve dynamic provisioning performance. We remark that our results hold as 
+long as the overall energy demands (including mainly server, cooling, and 
+power conditioning) is a convex and increasing function in the total number 
+of active servers. Our algorithms are decentralized and easy to implement. We 
+demonstrate up to 71% of energy saving in a case study using real-world 
+traces.  
+
+== Publications
+
+	- T. Lu and M. Chen, "Simple and Effective Dynamic Provisioning for Power-Proportional Data Centers", (invited), in Proceedings of the 46th Annual Conference on Information Sciences and Systems (CISS), Princeton, NJ, US, March 21 - 23, 2012. \[[../papers/DSR.ciss.12.pdf PDF]\]
+    - T. Lu, M. Chen, and L. Andrew, "Simple and Effective Dynamic Provisioning for Power-Proportional Data Centers", accepted for publication in IEEE Trans. on Parallel and Distributed Systems, Special Issue on Cloud Computing. \[[../papers/CSR.TPDS.12.pdf PDF]\].
+    - J. Tu, L. Lu, M. Chen, and R. K. Sitaraman, "Dynamic Provisioning in Next-Generation Data Centers with On-Site Power Production", in Proceedings of the fourth International Conference on Future Energy Systems (ACM e-Energy), Berkeley, CA, US, May 22 - 24, 2013. \[[../papers/DCM.eEnergy.2013.pdf PDF]\]
+
+== Presentation
+
+    - M. Chen, "Energy-Efficient Dynamic Provisioning in Data Centers: The Benefit of Seeing the Future". \[[../papers/dp.tom.and.jerry.ppsx PowerPoint]\]

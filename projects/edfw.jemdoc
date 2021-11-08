@@ -1,0 +1,14 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Error Detection By Fragile Watermarking
+Joint work with Yun He from Tsinghua University, and Reginald Lagendijk from T.U. Delft.
+
+In video communications over error-prone channels, compressed video streams are extremely sensitive to bit errors. Often random and burst bit errors impede correct decoding of parts of a received bit stream, even after interleaving and FEC protection. Video decoders normally utilize error concealment techniques to repair a damaged decoded frame, but the effectiveness of these error concealment schemes relies heavily on correctly locating errors in the bit stream. Traditional syntax based check error detection schemes performance badly, resulting in degraded image quality.
+
+In this work, we proposed to embed fragile watermarks into quantized DCT coefficients when encoding, to facilitate error detection at decoder side. By checking the integrity of the watermark at macro block (MB), decoder can locate the erroneous MB accurately; hence the error concealment works much better. A practical scheme called FEW is then proposed. The simulations results show FEW can significantly increase the erroneous MB correctly located rate, as compared to syntax based check scheme, at the cost of small quality loss in PSNR. There is a fundamental trade-off there between error detection capability, i.e. erroneous MB correctly located rate, and quality loss due to watermarking. Given H.263 codec, our work quantities the MSE loss due to watermarking in FEW. Analysis can be extended to different codec and different watermarking techniques.
+
+As watermarking techniques are originally developed for authorization and security purposes, our approach indicates new applications for watermarking techniques.
+
+The work was summarized in the following archives: 
+	- M. Chen, Y. He and R. L. Lagendijk, "A Fragile Watermark Error Detection Scheme For Wireless Video Communications", IEEE Trans. on Multimedia, Vol. 7, No. 2, April 2005. \[[../papers/trans.edfw.pdf PDF]\] 
+	- "Fragile Digital Watermark Based Error Detection Technique" (in Chinese), Master thesis, Tsinghua University, Beijing, China, June 2001. \[[../papers/thesis.master.pdf PDF]\] 

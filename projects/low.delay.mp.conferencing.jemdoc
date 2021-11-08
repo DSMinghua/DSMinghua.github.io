@@ -1,0 +1,46 @@
+# jemdoc: menu{MENU_sublevel}{}
+# jemdoc: addcss{../perweb.css}
+= Towards Low-Delay Multi-Party Video Conferencing
+Joint work with Xiangwen Chen, Mohammad H. Hajiesmaili, and Lok To Mak from The Chinese University of Hong Kong, Baochun Li from The University of
+Toronto, Yao Zhao from Alcatel-Lucent, Yunnan Wu from Facebook, Jin Li from Microsoft Research, and Chuan Wu from The University of Hong Kong
+
+With the availability of front-facing cameras in high-end smartphone devices,
+laptops, and HDTVs, multi-party video conferencing, which involves more than
+two participants in a live conferencing session, has attracted a significant
+amount of interest from the industry. Skype, for example, has recently
+launched a monthly-paid service supporting multi-party video conferencing in
+its latest version. Google+, a recently launched social network service, also
+involves an exciting multi-party conferencing component named Google hangout.
+
+In this project, we revisit the problem of multi-party conferencing and
+rethink the design space beyond those explored in existing solutions. The
+emphasis on maximizing session rate subject to low end-to-end delay
+constraints between any two parties in the conference is a must, and makes
+the problem uniquely challenging. To this end, we present Celerity, a
+multi-party conferencing solution specifically designed to achieve our
+objectives. It is entirely Peer-to-Peer (P2P), and as such eliminating the
+cost of maintaining centrally administered servers. It is designed to deliver
+video with low end-to-end delays, at quality levels commensurate with
+available network resources over arbitrary network topologies where
+bottlenecks can be anywhere in the network. /This is in contrast to commonly
+assumed P2P scenarios where bandwidth bottlenecks reside only at the edge of
+the network/. The highlight in our design is a distributed and adaptive rate
+control protocol, that can discover and adapt to arbitrary topologies and
+network conditions quickly, converging to efficient link rate allocations
+allowed by the underlying network. In accordance with adaptive link rate
+control, source video encoding rates are also dynamically controlled to
+optimize video quality in arbitrary and unpredictable network conditions. We
+apply network coding to allow flexible and opportunistic local loss recovery,
+without incurring additional retransmission delay which deteriorates
+conferencing experience.
+
+We have implemented Celerity in a prototype system, and demonstrate its
+superior performance over existing industrial and academic solutions,
+including Skype, in a local experimental testbed and over the Internet.
+
+In a follow-up work, we have exploited the cloud-assisted design to further improve the throughput and delay performance of multi-party video conferencing. One salient feature of cloud-assisted design is that it can leverage the cloud infrastruture to improve both throughput and delay performance of the conferencing system, and at the same time make it robust to peer churns due to last-mile network connectivity glitchs (e.g., mobile users dropping out due to fading in wireless channels).
+
+
+== Publications
+    - X. Chen, M. Chen, B. Li, Y. Zhao, Y. Wu, and J. Li, "Celerity: A Low Delay Multiparty Conferencing Solution", accepted for publication in IEEE Journal on Selected Areas in Communications (JSAC) -- 2012 Special Issue on Emerging Technologies in Communications. \[[../papers/Celerity.JSAC.12.pdf PDF]\] (Its conference version appears in ACM Multimedia 2011. \[[../papers/celerity.acmmm.11.pdf PDF]\]) Final long archived version is [http://arxiv.org/abs/1107.1138 here].
+    - M. Hajiesmaili, L. Mak, Z. Wang, C. Wu, M. Chen, and A. Khonsari, "Cost-Effective Low-Delay Cloud Video Conferencing", accepted for publication in IEEE Transactions on Multimedia. \[[../papers/Cloud.Video.Conferencing.TMM.17.pdf PDF]\] (Its conference version appears in IEEE ICDCS 2015.)

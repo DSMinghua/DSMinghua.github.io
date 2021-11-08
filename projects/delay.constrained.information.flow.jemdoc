@@ -1,0 +1,56 @@
+# jemdoc: menu{MENU_sublevel}{} 
+# jemdoc: addcss{../perweb.css} 
+= Delay-Constrained Network Information Flow 
+Joint work with Chih-Chun Wang from Purdue University and Ye Tian from Nanjing University
+
+
+This project aims to study a fundamental problem in delay-constrained network communication: determining and achieving (exactly or approximately) the maximum throughput of streaming perishable information with hard deadlines over networks.
+
+We first consider a delay-constrained unicast scenario,
+where a source node streams perishable information to a destination
+node over a directed acyclic graph subject to a delay
+constraint. Transmission along any edge incurs unit delay, and
+we require that every information bit generated at the source
+in the beginning of time t to be received and recovered by
+the destination in the end of time t + D - 1 where D > 0
+is the maximum allowed communication delay. We study the
+corresponding delay-constrained (d-cn) unicast capacity problem.
+When only routing is allowed, \[Ying, et al. 2011\] showed
+that the aforementioned d-cn unicast routing capacity can be
+characterized and computed efficiently. However, the d-cn capacity
+problem changes completely when network coding (NC) is
+allowed. In this work, we construct the first example showing that
+NC can achieve strictly higher d-cn throughput than routing even
+for the single unicast setting and the NC gain can be arbitrarily
+close to 2 in some instances. This is in sharp contrast to the delay-unconstrained
+(D \rightarrow \infty) single-unicast case where the classic
+min-cut/max-flow theorem implies that coding cannot improve
+throughput over routing. Finally, we propose a new upper bound
+on the d-cn unicast NC capacity and elaborate its connections
+to the existing routing-based results \[Ying, et al. 2011\]. Overall,
+our results suggest that d-cn communication is fundamentally
+different from the well-understood delay-unconstrained one and
+call for investigation participation.
+
+
+Recently, we have developed an algebraic approach to characterize the coding
+capacity for single-source unicast and multicast, as the rank
+difference between an information space and a deadline-induced
+interference space. The results allow us to numerically compute
+the NC capacity for any given graph, serving as a benchmark
+for existing and future solutions on improving delay-constrained
+throughput.
+
+
+
+
+== Publications
+    - C. Wang and M. Chen, "Sending Perishable Information: Coding Improves Delay-Constrained Throughput Even for Single Unicast", IEEE Transactions on Information Theory, vol. 63, no. 1, pp. 252 - 279, January 2017. \[[../papers/delay-constrained.single-unicast.TIT.16.pdf PDF]\] (Its conference version appeared in IEEE ISIT 2014.)
+    - M. Chen, Y. Tian, and C. Wang, "On Coding Capacity of Delay-constrained Network Information Flow: An Algebraic Approach", in Proceedings of 2016 IEEE International Symposium on Information Theory (IEEE ISIT 2016), Barcelona, Spain, July 10-15, 2016. \[[../papers/Timely.Capacity.ISIT.16.pdf PDF]\]
+#    - L. Deng, C. Wang, M. Chen, and S. Zhao, "Timely Wireless Flows with Arbitrary Traffic Patterns: Capacity Region and Scheduling Algorithms", in Proceedings of IEEE INFOCOM, San Francisco, US, Apr. 10 - 15, 2016. \[ final version to be available \]
+#	- C. Wang and M. Chen, "Sending Perishable Information: Coding Improves Delay-Constrained Throughput Even for Single Unicast", in Proceedings of 2014 IEEE International Symposium on Information Theory (IEEE ISIT 2014), Honolulu, USA, June 29 - July 4, 2014. \[[../papers/coding.improves.delay.constrained.throughput.ISIT.14.pdf PDF]\]
+
+
+== Presentation
+
+- M. Chen, "Sending Perishable Messages: Delay-Constrained Network Information Flow". \[[../talks/Delay-Constrained.Network.Coding.to.share.2020.ppsx PowerPoint]\]

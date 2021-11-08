@@ -1,0 +1,66 @@
+# jemdoc: menu{MENU_sublevel}{}
+# jemdoc: addcss{../perweb.css}
+= Synthesizing Distributed Algorithms for Combinatorial Network Optimization
+Joint work with Soung Chang Liew, Ziyu Shao, and Caihong Kai from The Chinese University of Hong Kong.
+
+Many important network design problems can be
+formulated as a combinatorial optimization problem. A large
+number of such problems, however, cannot readily be tackled by
+distributed algorithms. The Markov approximation framework
+we presented is a general technique for synthesizing
+distributed algorithms. We show that when using the log-sum-exp
+function to approximate the optimal value of any combinatorial
+problem, we end up with a solution that can be interpreted
+as the stationary probability distribution of a class of time-reversible
+Markov chains. Certain carefully designed Markov
+chains among this class yield distributed algorithms that solve the
+log-sum-exp approximated combinatorial network optimization
+problem. By three case studies, we illustrate that Markov
+approximation technique not only can provide fresh perspective
+to existing distributed solutions, but also can help us generate
+new distributed algorithms in various domains with provable
+performance. We believe the Markov approximation techniques
+will find application in many network optimization problems,
+and this work serves as a call for participation.
+
+== Publications
+
+	- M. Chen, S. Liew, Z. Shao, and C. Kai, "Markov Approximation for Combinatorial Network Optimization", accepted for publication in IEEE Trans. on Information Theory. \[[../papers/ma.ToIT.pdf PDF]\] (The conference version appeared in IEEE INFOCOM 2010. \[[../papers/ma.infocom10.pdf PDF]\])
+
+== Presentation
+
+    - Minghua Chen, "Markov Approximation for Combinatorial Network Optimization", INFOCOM presentation. \[[MA.infocom.10.pdf PDF version]\]
+
+== Relevant Work and Application (an incomplete list)
+
+=== Cloud-assisted Multi-party Video Conferencing
+    - M. Hajiesmaili, L. Mak, Z. Wang, C. Wu, M. Chen, and A. Khonsari, "Cost-Effective Low-Delay Cloud Video Conferencing", accepted for publication in IEEE Transactions on Multimedia. \[[../papers/Cloud.Video.Conferencing.TMM.17.pdf PDF]\] (Its conference version appears in IEEE ICDCS 2015.)
+
+=== Resource scheduling in cloud computing
+    - Z. Shao, X. Jin, W. Jiang, M. Chen, and M. Chiang, "Intra-Data-Center Traffic Engineering with Ensemble Routing", in Proceedings of IEEE INFOCOM, Torino, Italy, Apr. 14 - 19, 2013. \[[../papers/ensamble.routing.2013.pdf PDF]\]
+    - W. Jiang, T. Lan, S. Ha, M. Chen, and M. Chiang, "Joint VM Placement and Routing for Data Center Traffic Engineering", in Proceedings of IEEE INFOCOM (mini-conference), Orlando, Florida, USA, Mar. 25 - 30, 2012. \[[../papers/joint.vm.te.12.pdf PDF]\]
+
+=== P2P streaming
+
+    - S. Zhang, Z. Shao, and M. Chen, "Optimal Distributed P2P Streaming under Node Degree Bounds", in Proceedings of the 18th IEEE International Conference on Network Protocols (ICNP 2010), Kyoto, Japan, Oct. 5 - 8, 2010. \[[../papers/p2p.streaming.icnp10.pdf PDF]\]. Also available as technical report. \[[http://arxiv.org/abs/1008.5248 PDF]\]
+
+=== Distributed caching systems and video-on-demand networks
+
+    - H. Zhang, Z. Shao, M. Chen, and K. Ramchandran, "Optimal Neighbor Selection in BitTorrent-like Peer-to-Peer Networks", in Proceedings of ACM SIGMETRICS, San Jose, CA, US, June 7-11, 2011. (poster paper) \[[../papers/REBT.sigmetrics.11.pdf PDF]\]    
+    - H. Zhang, M. Chen, A. Parekh, and K. Ramchandran, "An Adaptive Multi-Channel P2P Video-on-Demand System Using Plug-and-Play Helpers", submitted for publication
+    
+=== Understanding CSMA protocol
+
+    - M. Chen, S. Liew, Z. Shao, and C. Kai, "Markov Approximation for Combinatorial Network Optimization", Proceedings of IEEE INFOCOM 2010, San Diego, CA, US, March, 2010. \[[../papers/ma.infocom10.pdf PDF]\]. Also available as technical
+report. \[[../papers/ma.tr.pdf PDF]\]
+
+=== Understanding Bit-Torrent
+
+    - Z. Shao, H. Zhang, M. Chen, and K. Ramchandran, "Reverse-Engineering BitTorrent: A Markov Approximation Perspective", in Proceedings of IEEE INFOCOM (mini-conference), Orlando, Florida, USA, Mar. 25 - 30, 2012. \[[../papers/understand.bt.12.pdf PDF]\]    
+
+
+=== Designing scheduling algorithms in wireless networks that go beyond "treating interference as noise"
+
+    - Z. Shao, M. Chen, A. S. Avestimehr, and S. Li, "Cross-layer Optimization for Wireless Networks with Deterministic Channel Models", IEEE Trans. on Information Theory, Sept. 2011. \[[../papers/ToIT.num.det.pdf PDF]\]
+
+
